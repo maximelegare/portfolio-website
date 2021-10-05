@@ -1,8 +1,12 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Box, Title } from "../Core";
+import { getCurrentYear } from "../../utils/currentYear";
 
 const Footer = ({ isDark = true }) => {
+  
+  
+  
   return (
     <>
       {/* <!-- Footer section --> */}
@@ -24,7 +28,7 @@ const Footer = ({ isDark = true }) => {
               `}
               className="text-uppercase"
             >
-              © 2020 All right reseved
+              ©{getCurrentYear()} All right reseved
             </Title>
           </div>
         </Container>
