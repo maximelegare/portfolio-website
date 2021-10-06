@@ -17,7 +17,7 @@ import { device } from "../utils";
 const WorkSingle = () => {
   return (
     <>
-      <PageWrapper darkTheme>
+      <PageWrapper>
         <Section hero>
           <Container>
             <Row className="justify-content-center text-center">
@@ -89,7 +89,7 @@ const WorkSingle = () => {
           </Container>
         </Section>
 
-        <Section bg="dark" className="pt-0">
+        <Section bg="light" className="pt-0">
           <Container>
             <Row>
               <Col xs="12" className="mb-5">

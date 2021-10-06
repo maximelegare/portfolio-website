@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import { Container } from "react-bootstrap";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-import { Link } from "gatsby";
+import { Link } from "react-scroll";
 
 import GlobalContext from "../../context/GlobalContext";
 import Offcanvas from "../Offcanvas";
@@ -244,7 +244,7 @@ const Header = ({ isDark }) => {
                   className="navbar-nav d-none d-lg-flex"
                   dark={isDark ? 1 : 0}
                 >
-                  {menuItems.map(
+                  {/* {menuItems.map(
                     (
                       { label, isExternal = false, name, items, ...rest },
                       index
@@ -431,14 +431,34 @@ const Header = ({ isDark }) => {
                         </React.Fragment>
                       );
                     }
-                  )}
+                  )} */}
 
                   {/* Open about modal */}
+                  <li>
+                    <Link
+                      to="works"
+                      spy={true}
+                      smooth={true}
+                      offset={-50}
+                      duration={1000}
+                      className="nav-link"
+                    >
+                      <a
+                        href="/#"
+                        onClick={e => {
+                          e.preventDefault();
+                        }}
+                      >
+                        my work.
+                      </a>
+                    </Link>
+                  </li>
+
                   <li className="nav-item">
                     <a
                       className="nav-link"
                       href="/#"
-                      onClick={(e) => {
+                      onClick={e => {
                         e.preventDefault();
                         gContext.toggleAbout();
                       }}
@@ -452,7 +472,7 @@ const Header = ({ isDark }) => {
                     <a
                       className="nav-link"
                       href="/#"
-                      onClick={(e) => {
+                      onClick={e => {
                         e.preventDefault();
                         gContext.toggleContact();
                       }}

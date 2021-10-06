@@ -4,9 +4,6 @@ import { Box, Title } from "../Core";
 import { getCurrentYear } from "../../utils/currentYear";
 
 const Footer = ({ isDark = true }) => {
-  
-  
-  
   return (
     <>
       {/* <!-- Footer section --> */}
