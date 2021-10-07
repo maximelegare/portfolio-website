@@ -48,46 +48,59 @@ const Works = () => {
                     filterBy("*");
                   }}
                 >
-                  All works
+                  Tous
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className={`nav-link font-weight-bold text-uppercase ${
-                    activeLink === "branding" ? "active" : null
+                    activeLink === "ui-design" ? "active" : null
                   }`}
                   onClick={(e) => {
                     e.preventDefault();
-                    filterBy("branding");
+                    filterBy("ui-design");
                   }}
                 >
-                  Branding
+                  UI-Design
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className={`nav-link font-weight-bold text-uppercase ${
-                    activeLink === "ux-design" ? "active" : null
+                    activeLink === "developpement web" ? "active" : null
                   }`}
                   onClick={(e) => {
                     e.preventDefault();
-                    filterBy("ux-design");
+                    filterBy("developpement web");
                   }}
                 >
-                  UX Design
+                  Developpement Web
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className={`nav-link font-weight-bold text-uppercase ${
-                    activeLink === "photography" ? "active" : null
+                    activeLink === "photographie" ? "active" : null
                   }`}
                   onClick={(e) => {
                     e.preventDefault();
-                    filterBy("photography");
+                    filterBy("photographie");
                   }}
                 >
-                  Photography
+                  Photographie
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className={`nav-link font-weight-bold text-uppercase ${
+                    activeLink === "graphisme" ? "active" : null
+                  }`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    filterBy("graphisme");
+                  }}
+                >
+                  Graphisme
                 </a>
               </li>
             </ListNav>
