@@ -3,9 +3,13 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import { Box, Title, Text } from "../Core";
 
-const WorkBox = styled(Box)``;
+const WorkBox = styled(Box)`
+border-radius: 8px;
+overflow: hidden;
+box-shadow:0 3px 8px #a2a2a2;
+`;
 const TextBox = styled(Box)`
-  position: absolute;
+  position: absolute; 
   overflow: hidden;
   bottom: 0px;
   left: 20px;
@@ -15,10 +19,12 @@ const TextBox = styled(Box)`
   z-index: 1;
   padding: 1.25rem 1.875rem;
   transition: 0.4s;
+  box-shadow:0  3px 3px #a2a2a2;
   &::before {
     position: absolute;
     content: "";
     background: ${({ theme }) => theme.colors.bg};
+    /* border-radius: 20px; */
     top: 0;
     left: 0;
     right: 0;

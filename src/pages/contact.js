@@ -7,7 +7,7 @@ import Contact from "../sections/others/Contact";
 const ContactPage = () => {
   return (
     <>
-      <PageWrapper darkTheme>
+      <PageWrapper>
         <Box pt={4}>
           <Contact />
         </Box>

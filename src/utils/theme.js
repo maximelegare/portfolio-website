@@ -9,6 +9,7 @@ const defaultColors = {
   ash: "#413e65",
   black: "#000000",
   warning: "#fedc5a",
+  red:"#c32d39",
   success: "#56b381",
   info: "#482EC3",
 };
@@ -16,6 +17,7 @@ const defaultColors = {
 const colors = {
   primary: defaultColors.primary,
   secondary: defaultColors.secondary,
+  red:defaultColors.red,
   light: defaultColors.white,
   lightShade: rgba(defaultColors.white, 0.5),
   dark: defaultColors.dark,

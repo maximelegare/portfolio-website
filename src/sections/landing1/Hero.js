@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-scroll";
-
+import imgBlood from "../../assets/image/svg/blood-splatter.svg";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 
 import { device } from "../../utils";
@@ -10,6 +10,17 @@ import imgL from "../../assets/image/png/portrait-1.png";
 
 const ImgRight = styled.img`
   max-width: 100%;
+`;
+
+const ImgBlood = styled.img`
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  /* right: 0; */
+  transform: translate(-50%, -50%) rotate(10deg);
+  z-index: 0;
+  /* transform: scale(0.5); */
 `;
 
 const Hero = () => {
@@ -21,15 +32,32 @@ const Hero = () => {
           <Row className="align-items-center">
             <Col lg="7" className="mb-5 mb-lg-0">
               <Box>
-                <Text
-                  variant="tag"
-                  mb={4}
-                  className="text-uppercase"
-                  color="heading"
-                  mb="40px"
-                >
-                  ILLUSTRATOR, GRAPHIC DESIGNER, TRAVELER
-                </Text>
+                <Box>
+                  <Text
+                    variant="tag"
+                    mb={4}
+                    className="text-uppercase"
+                    color="heading"
+                    mb="40px"
+                    style={{ display: "inline" }}
+                  >
+                    DEVELOPPEUR WEB, DESIGNER &{" "}
+                  </Text>
+                  <Text
+                    variant="tag"
+                    mb={4}
+                    className="text-uppercase"
+                    color="heading"
+                    mb="40px"
+                    style={{ display: "inline-block",position: "relative", zIndex: 100 }}
+                  >
+                    <i style={{ position: "relative", zIndex: 100}}>
+                      «&nbsp;HORROR&nbsp;LOVER&nbsp;»
+                    </i>
+                    <ImgBlood src={imgBlood} alt="" />
+                  </Text>
+                </Box>
+
                 <Title variant="hero">
                   I design digital crafts for clients.
                 </Title>

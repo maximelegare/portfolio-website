@@ -8,7 +8,9 @@ const Paragraph = styled.p`
   font-size: 1.0625rem;
   letter-spacing: -0.2px;
   line-height: 1.71;
-
+  position: relative;
+  /* display:inline; */
+  z-index: 100;
   ${color};
   ${space};
   ${typography};

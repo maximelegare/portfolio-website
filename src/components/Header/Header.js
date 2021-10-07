@@ -81,7 +81,7 @@ const Menu = styled.ul`
     }
     &.nav-item:hover > .nav-link,
     &.nav-item.active > .nav-link {
-      color: ${({ theme }) => theme.colors.primary} !important;
+      color: ${({ theme }) => theme.colors.red} !important;
       &:after {
         transform: rotate(-90deg);
       }
@@ -161,7 +161,7 @@ const MenuDropdown = styled.ul`
     &:hover,
     &.active {
       > a {
-        color: ${({ theme }) => theme.colors.primary} !important;
+        color: ${({ theme }) => theme.colors.secondary} !important;
         text-decoration: none;
         &::after {
           transform: rotate(180deg);
