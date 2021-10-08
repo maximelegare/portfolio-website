@@ -36,6 +36,10 @@ import sass from '../assets/my-images/svg/technologies/sass.svg'
 import stripe from '../assets/my-images/svg/technologies/stripe.svg'
 import vuejs from '../assets/my-images/svg/technologies/vuejs.svg'
 import mongodb from '../assets/my-images/svg/technologies/mongodb.svg'
+import materialui from '../assets/my-images/svg/technologies/materialui.svg'
+import styledcomponent from '../assets/my-images/svg/technologies/styledcomponent.svg'
+import express from '../assets/my-images/svg/technologies/express.svg'
+
 
 
 export const designWorks1 = [
@@ -55,7 +59,7 @@ export const designWorks1 = [
     categories: [`developpement web`, `photographie`, `ui-design`],
     thumbnail: imgT5,
     link: "/portfolio-details-2",
-    technologies:[react, redux, firebase, stripe, photoshop, illustrator]
+    technologies:[react, redux, firebase, stripe, materialui, styledcomponent, photoshop, illustrator,]
   },
   {
     brand: `Stylisme`,
@@ -73,7 +77,7 @@ export const designWorks1 = [
     categories: [`developpement web`,`ui-design`],
     thumbnail: imgT7,
     link: "/portfolio-details-2",
-    technologies:[vuejs, mongodb, nodejs]
+    technologies:[vuejs, mongodb, nodejs, express]
   },
   {
     brand: `Photographie d'horreur`,
@@ -109,7 +113,7 @@ export const designWorks1 = [
     categories: [`developpement web`],
     thumbnail: imgT10,
     link: "/portfolio-details-2",
-    technologies:[react, redux, stripe, firebase]
+    technologies:[react, redux, stripe, firebase, sass]
   },
   {
     brand: `T-shirt Design`,
