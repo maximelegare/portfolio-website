@@ -109,7 +109,7 @@ export const designWorks1 = [
     categories: [`developpement web`],
     thumbnail: imgT10,
     link: "/portfolio-details-2",
-    technologies:[react, redux, stripe]
+    technologies:[react, redux, stripe, firebase]
   },
   {
     brand: `T-shirt Design`,
