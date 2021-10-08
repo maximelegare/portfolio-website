@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-scroll";
-import imgBlood from "../../assets/image/svg/blood-splatter.svg";
+import imgBlood from "../../assets/my-images/svg/blood-splatter.svg";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 
 import { device } from "../../utils";

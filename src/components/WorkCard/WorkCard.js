@@ -3,13 +3,22 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import { Box, Title, Text } from "../Core";
 
+// import icon from '../../assets/my-images/svg/technologies/react.svg'
+
 const WorkBox = styled(Box)`
-border-radius: 8px;
-overflow: hidden;
-box-shadow:0 3px 8px #a2a2a2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px #a2a2a2;
 `;
+
+const IconStyled = styled.img`
+height:20px;
+width:auto;
+margin-right: 5px;
+`;
+
 const TextBox = styled(Box)`
-  position: absolute; 
+  position: absolute;
   overflow: hidden;
   bottom: 0px;
   left: 20px;
@@ -19,7 +28,7 @@ const TextBox = styled(Box)`
   z-index: 1;
   padding: 1.25rem 1.875rem;
   transition: 0.4s;
-  box-shadow:0  3px 3px #a2a2a2;
+  box-shadow: 0 3px 3px #a2a2a2;
   &::before {
     position: absolute;
     content: "";
@@ -51,6 +60,13 @@ const WorkCard = ({ workItem, link, ...rest }) => (
       <Title variant="card">
         <Link to={link}>{workItem.brand} </Link>
       </Title>
+
+      {workItem.technologies.map(icon => (
+        <IconStyled
+          src={icon}
+          alt=""
+        />
+      ))}
     </TextBox>
   </WorkBox>
 );

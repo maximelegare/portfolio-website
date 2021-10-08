@@ -26,6 +26,18 @@ import imgT12 from "../assets/my-images/jpg/12_photoshoot-stylisme.jpg";
 import imgT13 from "../assets/my-images/jpg/13_photoshoot-stylisme.jpg";
 import imgT14 from "../assets/my-images/jpg/14_photoshoot-stylisme.jpg";
 
+import illustrator from '../assets/my-images/svg/technologies/illustrator.svg'
+import firebase from '../assets/my-images/svg/technologies/firebase.svg'
+import nodejs from '../assets/my-images/svg/technologies/nodejs.svg'
+import photoshop from '../assets/my-images/svg/technologies/photoshop.svg'
+import react from '../assets/my-images/svg/technologies/react.svg'
+import redux from '../assets/my-images/svg/technologies/redux.svg'
+import sass from '../assets/my-images/svg/technologies/sass.svg'
+import stripe from '../assets/my-images/svg/technologies/stripe.svg'
+import vuejs from '../assets/my-images/svg/technologies/vuejs.svg'
+import mongodb from '../assets/my-images/svg/technologies/mongodb.svg'
+
+
 export const designWorks1 = [
   {
     brand: `Stylisme`,
@@ -33,7 +45,8 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`graphisme`],
     thumbnail: imgT4,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[illustrator, photoshop]
   },
   {
     brand: `Création de vêtements`,
@@ -41,7 +54,8 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`developpement web`, `photographie`, `ui-design`],
     thumbnail: imgT5,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[react, redux, firebase, stripe, photoshop, illustrator]
   },
   {
     brand: `Stylisme`,
@@ -49,7 +63,8 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`ui-design`, `photographie`],
     thumbnail: imgT6,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[illustrator]
   },
   {
     brand: `Timers & Todos`,
@@ -57,7 +72,8 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`developpement web`,`ui-design`],
     thumbnail: imgT7,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[vuejs, mongodb, nodejs]
   },
   {
     brand: `Photographie d'horreur`,
@@ -65,7 +81,8 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photographie`, `graphisme`],
     thumbnail: imgT3,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[photoshop]
   },
   {
     brand: `Photographie d'horreur`,
@@ -73,7 +90,8 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photographie`],
     thumbnail: imgT8,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[photoshop]
   },
   {
     brand: `Trouver un mentor`,
@@ -81,7 +99,8 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`developpement web`],
     thumbnail: imgT9,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[vuejs, firebase]
   },
   {
     brand: `Vente de vêtements`,
@@ -89,7 +108,8 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`developpement web`],
     thumbnail: imgT10,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[react, redux, stripe]
   },
   {
     brand: `T-shirt Design`,
@@ -97,7 +117,8 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`graphisme`],
     thumbnail: imgT11,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[illustrator]
   },
   {
     brand: `Stylisme`,
@@ -105,7 +126,8 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photogrphie`],
     thumbnail: imgT12,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[photoshop]
   },
   {
     brand: `Stylisme`,
@@ -113,7 +135,8 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photographie`],
     thumbnail: imgT13,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[photoshop]
   },
   {
     brand: `Stylisme`,
@@ -121,6 +144,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photographie`],
     thumbnail: imgT14,
-    link: "/portfolio-details-2"
+    link: "/portfolio-details-2",
+    technologies:[photoshop]
   }
 ];
