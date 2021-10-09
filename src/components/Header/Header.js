@@ -81,7 +81,7 @@ const Menu = styled.ul`
     }
     &.nav-item:hover > .nav-link,
     &.nav-item.active > .nav-link {
-      color: ${({ theme }) => theme.colors.red} !important;
+      color: ${({ theme }) => theme.colors.primary} !important;
       &:after {
         transform: rotate(-90deg);
       }

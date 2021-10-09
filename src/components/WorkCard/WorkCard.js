@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Box, Title, Text } from "../Core";
 
 import GlobalContext from "../../context/GlobalContext";
-
+import IconTechnology from "../IconTechnology";
 // import icon from '../../assets/my-images/svg/technologies/react.svg'
 
 const WorkBox = styled(Box)`
@@ -13,11 +13,7 @@ const WorkBox = styled(Box)`
   box-shadow: 0 3px 8px #a2a2a2;
 `;
 
-const IconStyled = styled.img`
-height:20px;
-width:auto;
-margin-right: 5px;
-`;
+
 
 const TextBox = styled(Box)`
   position: absolute;
@@ -73,11 +69,7 @@ const WorkCard = ({ workItem, link, ...rest }) => {
       </Title>
 
       {workItem.technologies.map(icon => (
-        <IconStyled
-          key={icon}
-          src={icon}
-          alt=""
-        />
+        <IconTechnology key={icon} icon={icon} small/>
       ))}
     </TextBox>
   </WorkBox>

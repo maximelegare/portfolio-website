@@ -28,7 +28,7 @@ export const devWorks1 = [
     brand: `Shopper`,
     slug: `shopper`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
-    categories: [`web`, `ui-design`],
+    categories: [`web`, `graphisme`],
     thumbnail: imgT3,
   link : "/portfolio-details"
 },
@@ -36,7 +36,7 @@ export const devWorks1 = [
     brand: `Candy Store`,
     slug: `candy-store`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
-    categories: [`app`, `ui-design`, `web`],
+    categories: [`app`, `graphisme`, `web`],
     thumbnail: imgT4,
   link : "/portfolio-details"
 },
@@ -44,7 +44,7 @@ export const devWorks1 = [
     brand: `Travel App`,
     slug: `travel-app`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
-    categories: [`app`, `ui-design`],
+    categories: [`app`, `graphisme`],
     thumbnail: imgT5,
   link : "/portfolio-details"
 },
@@ -52,7 +52,7 @@ export const devWorks1 = [
     brand: `App Ice Cream`,
     slug: `app-ice-cream`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
-    categories: [`ui-design`, `web`],
+    categories: [`graphisme`, `web`],
     thumbnail: imgT6,
   link : "/portfolio-details"
 },
@@ -60,7 +60,7 @@ export const devWorks1 = [
     brand: `Camera`,
     slug: `Camera`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
-    categories: [`app`, `ui-design`],
+    categories: [`app`, `graphisme`],
     thumbnail: imgT7,
   link : "/portfolio-details"
 },
@@ -68,7 +68,7 @@ export const devWorks1 = [
     brand: `Smart Watch`,
     slug: `smart-watch`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
-    categories: [`web`, `ui-design`],
+    categories: [`web`, `graphisme`],
     thumbnail: imgT8,
   link : "/portfolio-details"
 },

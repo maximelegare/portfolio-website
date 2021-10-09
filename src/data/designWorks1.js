@@ -46,7 +46,7 @@ export const designWorks1 = [
     brand: `Création de vêtements`,
     slug: `creation-de-vêtements`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
-    categories: [`developpement web`, `photographie`, `ui-design`],
+    categories: [`developpement web`, `photographie`, `graphisme`],
     thumbnail: imgT5,
     link: "/portfolio-details-2",
     technologies:[react, redux, firebase, stripe, materialui, styledcomponent, photoshop, illustrator, photography]
@@ -64,7 +64,7 @@ export const designWorks1 = [
     brand: `Stylisme`,
     slug: `stylisme`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
-    categories: [`ui-design`, `photographie`],
+    categories: [`graphisme`, `photographie`],
     thumbnail: imgT6,
     link: "/portfolio-details-2",
     technologies:[illustrator, photoshop, photography]
@@ -82,7 +82,7 @@ export const designWorks1 = [
     brand: `Timers & Todos`,
     slug: `timers-&-todos`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
-    categories: [`developpement web`,`ui-design`],
+    categories: [`developpement web`,`graphisme`],
     thumbnail: imgT7,
     link: "/portfolio-details-2",
     technologies:[vuejs, firebase]
