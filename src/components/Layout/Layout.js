@@ -17,6 +17,8 @@ import ThemeSwitch from "../ThemeSwitch";
 import ModalVideo from "../ModalVideo";
 import ContactModal from "../ContactModal";
 import AboutModal from "../AboutModal";
+import ProjectSpecificationModal from "../ProjectSpecificationsModal/ProjectSpecificationsModal";
+
 
 import GlobalContext from "../../context/GlobalContext";
 
@@ -87,6 +89,8 @@ const Layout = ({ children, pageContext }) => {
         // The popstate event is fired each time when the current history entry changes.
         gContext.closeAbout();
         gContext.closeContact();
+        gContext.closeProjectSpecifications();
+
       },
       false
     );
@@ -96,6 +100,7 @@ const Layout = ({ children, pageContext }) => {
         // The pushstate event is fired each time when the current history entry changes.
         gContext.closeAbout();
         gContext.closeContact();
+        gContext.closeProjectSpecifications();
       },
       false
     );
@@ -151,12 +156,12 @@ const Layout = ({ children, pageContext }) => {
         <div className="site-wrapper overflow-hidden" ref={eleRef}>
           <Header isDark={gContext.theme.headerDark} />
           {children}
-
           <Footer isDark={gContext.theme.footerDark} />
         </div>
         <AboutModal />
         <ContactModal />
         <ModalVideo />
+        <ProjectSpecificationModal workItem={gContext.selectedProjectSpecifications}/>
       </ThemeProvider>
     </>
   );

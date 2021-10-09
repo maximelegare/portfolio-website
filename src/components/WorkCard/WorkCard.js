@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import { Box, Title, Text } from "../Core";
+
+import GlobalContext from "../../context/GlobalContext";
 
 // import icon from '../../assets/my-images/svg/technologies/react.svg'
 
@@ -47,28 +49,38 @@ const TextBox = styled(Box)`
   }
 `;
 
-const WorkCard = ({ workItem, link, ...rest }) => (
+const WorkCard = ({ workItem, link, ...rest }) => {
+  const gContext = useContext(GlobalContext)
+
+  const handleClick = () => {
+    gContext.changeSelectedProjectSpecifications(workItem)
+    gContext.toggleProjectSpecifications()
+  }
+
+  
+  return(
   <WorkBox className="position-relative" {...rest}>
-    <Link to={link} className="d-block">
+    <div className="d-block" onClick={handleClick}>
       <img src={workItem.thumbnail} alt="" className="w-100" />
-    </Link>
+    </div>
 
     <TextBox>
       <Text variant="tag" mb={2}>
         {workItem.categories[0]}
       </Text>
       <Title variant="card">
-        <Link to={link}>{workItem.brand} </Link>
+        <div onClick={handleClick}>{workItem.brand} </div>
       </Title>
 
       {workItem.technologies.map(icon => (
         <IconStyled
+          key={icon}
           src={icon}
           alt=""
         />
       ))}
     </TextBox>
   </WorkBox>
-);
+)};
 
 export default WorkCard;

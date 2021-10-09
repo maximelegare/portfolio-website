@@ -7,6 +7,8 @@ const themeConfigDefault = {
   footerDark: false,
 };
 
+
+
 const GlobalProvider = ({ children }) => {
   const [theme, setTheme] = useState(themeConfigDefault);
   const [videoModalVisible, setVideoModalVisible] = useState(false);
@@ -14,11 +16,37 @@ const GlobalProvider = ({ children }) => {
   const [contactVisible, setContactVisible] = useState(false);
   const [visibleOffCanvas, setVisibleOffCanvas] = useState(false);
 
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+
+  // manage the selected project data to send to the projectSpecificationModal
+  const [selectedProjectSpecifications, setSelectedProjectSpecifications] = useState(null)
+  const [projectSpecificationsVisible, setProjectSpecificationsVisible] = useState(false)
+
+
+  // set the selected project to show in the projectSpecificationModal
+  const changeSelectedProjectSpecifications = (project) => {
+    setSelectedProjectSpecifications(project)
+  }
+
+  // change projectSpecificationModal visibility
+  const toggleProjectSpecifications = () => {
+    setProjectSpecificationsVisible(!projectSpecificationsVisible)
+  }
+  const closeProjectSpecifications = () => {
+    setProjectSpecificationsVisible(false)
+  }
+
+  //////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
+
+
   const changeTheme = (themeConfig = themeConfigDefault) => {
     setTheme({
       ...themeConfig,
     });
   };
+
 
   const toggleVideoModal = () => {
     setVideoModalVisible(!videoModalVisible);
@@ -59,6 +87,12 @@ const GlobalProvider = ({ children }) => {
         closeContact,
         visibleOffCanvas,
         toggleOffCanvas,
+
+        changeSelectedProjectSpecifications,
+        selectedProjectSpecifications,
+        toggleProjectSpecifications,
+        closeProjectSpecifications,
+        projectSpecificationsVisible
       }}
     >
       {children}

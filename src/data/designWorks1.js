@@ -1,6 +1,7 @@
 
 
 import imgT1 from "../assets/my-images/jpg/01_france-lavoie.jpg";
+import imgT2 from "../assets/my-images/jpg/02_princess.svg";
 import imgT3 from "../assets/my-images/jpg/03_fed-by-music.jpg";
 import imgT4 from "../assets/my-images/jpg/04_buisness-card-stylisme.jpg";
 import imgT5 from "../assets/my-images/jpg/05_bikanky-landing.jpg";
@@ -51,6 +52,15 @@ export const designWorks1 = [
     technologies:[react, redux, firebase, stripe, materialui, styledcomponent, photoshop, illustrator, photography]
   },
   {
+    brand: `Création de vêtements`,
+    slug: `creation-de-vêtements`,
+    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    categories: [`graphisme`],
+    thumbnail: imgT2,
+    link: "/portfolio-details-2",
+    technologies:[illustrator]
+  },
+  {
     brand: `Stylisme`,
     slug: `stylisme`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
@@ -81,7 +91,7 @@ export const designWorks1 = [
     brand: `Photographie d'horreur`,
     slug: `photographie d'horreur`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
-    categories: [`photographie`, `graphisme`],
+    categories: [`photographie`],
     thumbnail: imgT3,
     link: "/portfolio-details-2",
     technologies:[photoshop, photography]
