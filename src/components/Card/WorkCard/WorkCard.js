@@ -1,10 +1,10 @@
 import React, {useContext} from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
-import { Box, Title, Text } from "../Core";
+import { Box, Title, Text } from "../../Core";
 
-import GlobalContext from "../../context/GlobalContext";
-import IconTechnology from "../IconTechnology";
+import GlobalContext from "../../../context/GlobalContext";
+import IconTechnology from "../../IconTechnology";
 // import icon from '../../assets/my-images/svg/technologies/react.svg'
 
 const WorkBox = styled(Box)`
@@ -62,15 +62,16 @@ const WorkCard = ({ workItem, link, ...rest }) => {
 
     <TextBox>
       <Text variant="tag" mb={2}>
-        {workItem.categories[0]}
+        {workItem?.categories[0]}
       </Text>
       <Title variant="card">
         <div onClick={handleClick}>{workItem.brand} </div>
       </Title>
 
-      {workItem.technologies.map(icon => (
+      {workItem.technologies.filter((_, index) => index < 3 ).map(icon => (
         <IconTechnology key={icon} icon={icon} small/>
-      ))}
+        ))}
+      {workItem.technologies.length > 3 ? (<Text style={{display:"inline"}}>...</Text>) : ""}
     </TextBox>
   </WorkBox>
 )};

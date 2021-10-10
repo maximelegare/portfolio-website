@@ -3,7 +3,7 @@ import { Container, Col } from "react-bootstrap";
 import Masonry from "react-masonry-component";
 
 import { Section, Box, ListNav, ButtonOutline } from "../../components/Core";
-import WorkCard from "../../components/WorkCard";
+import WorkCard from "../../components/Card/WorkCard";
 import { masonryWorks1 } from "../../data";
 
 const Works = () => {
@@ -94,21 +94,7 @@ const Works = () => {
           </Box>
         </Container>
 
-        <Container>
-          <Masonry
-            options={masonryOptions}
-            className={"masonry-grid row"} // default ''
-          >
-            {items.map((item, index) => (
-              <Col lg="4" md="6" sm="12" key={index} className="filtr-item">
-                <WorkCard workItem={item} mb="30px" link={item.link}/>
-              </Col>
-            ))}
-          </Masonry>
-          <Box pt="3rem" className="text-center">
-            <ButtonOutline>Load more works</ButtonOutline>
-          </Box>
-        </Container>
+        
       </Section>
     </>
   );

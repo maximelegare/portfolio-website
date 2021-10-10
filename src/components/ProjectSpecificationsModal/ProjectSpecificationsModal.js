@@ -56,7 +56,7 @@ const CloseWrapper = styled.div`
   color: ${({ theme }) => theme.colors.dark};
 `;
 
-const CloseButton = (props) => (
+const CloseButton = props => (
   <CloseWrapper {...props}>
     <svg
       role="img"
@@ -78,7 +78,7 @@ const CloseButton = (props) => (
   </CloseWrapper>
 );
 
-const ProjectSpecificationModal = ({workItem, ...rest}) => {
+const ProjectSpecificationModal = ({ workItem, ...rest }) => {
   const gContext = useContext(GlobalContext);
 
   return (

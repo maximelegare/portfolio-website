@@ -3,7 +3,7 @@ import { Container, Col } from "react-bootstrap";
 import Masonry from "react-masonry-component";
 
 import { Section, Box, ListNav } from "../../components/Core";
-import WorkCard from "../../components/WorkCard";
+import WorkCard from "../../components/Card/WorkCard/WorkCard";
 import { devWorks1 } from "../../data";
 
 const Works = () => {
