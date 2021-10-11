@@ -9,9 +9,28 @@ import imgT8 from "../assets/my-images/jpg/08_horror-dolls.jpg";
 import imgT9 from "../assets/my-images/jpg/09_find-a-coach.jpg";
 import imgT10 from "../assets/my-images/jpg/10_crown-shop.jpg";
 import imgT11 from "../assets/my-images/jpg/11_lobster&narval.jpg";
-import imgT12 from "../assets/my-images/jpg/12_photoshoot-stylisme.jpg";
 import imgT13 from "../assets/my-images/jpg/13_photoshoot-stylisme.jpg";
 import imgT14 from "../assets/my-images/jpg/14_photoshoot-stylisme.jpg";
+import imgT15 from "../assets/my-images/jpg/15_photoshoot-stylisme.jpg";
+
+
+import danielle1 from "../assets/my-images/jpg/danielle/danielle-1.jpg"
+import danielle2 from "../assets/my-images/jpg/danielle/danielle-2.jpg"
+import danielle3 from "../assets/my-images/jpg/danielle/danielle-3.jpg"
+import danielle4 from "../assets/my-images/jpg/danielle/danielle-4.jpg"
+import danielle5 from "../assets/my-images/jpg/danielle/danielle-5.jpg"
+import danielle6 from "../assets/my-images/jpg/danielle/danielle-6.jpg"
+import danielle7 from "../assets/my-images/jpg/danielle/danielle-7.jpg"
+import danielle8 from "../assets/my-images/jpg/danielle/danielle-8.jpg";
+
+import frederique1 from '../assets/my-images/jpg/frederique/frederique-1.jpg'
+import frederique2 from '../assets/my-images/jpg/frederique/frederique-2.jpg'
+import frederique3 from '../assets/my-images/jpg/frederique/frederique-3.jpg'
+// import frederique4 from '../assets/my-images/jpg/frederique/frederique-4.jpg'
+
+import genevieve1 from '../assets/my-images/jpg/genevieve/genevieve-1.jpg'
+import genevieve2 from '../assets/my-images/jpg/genevieve/genevieve-2.jpg'
+
 
 import photography from "../assets/my-images/svg/technologies/camera3.svg";
 import illustrator from "../assets/my-images/svg/technologies/illustrator.svg";
@@ -36,10 +55,7 @@ export const designWorks1 = [
     categories: [`graphisme`],
     thumbnail: imgT4,
     otherImages: [
-      { thumbnail: imgT2 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+      
     ],
     link: "/portfolio-details-2",
     technologies: [illustrator, photoshop, photography]
@@ -51,10 +67,7 @@ export const designWorks1 = [
     categories: [`developpement web`, `photographie`, `graphisme`],
     thumbnail: imgT5,
     otherImages: [
-      { thumbnail: imgT12 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+      
     ],
     link: "/portfolio-details-2",
     technologies: [
@@ -76,10 +89,7 @@ export const designWorks1 = [
     categories: [`graphisme`],
     thumbnail: imgT2,
     otherImages: [
-      { thumbnail: imgT2 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+      
     ],
     link: "/portfolio-details-2",
     technologies: [illustrator]
@@ -91,10 +101,7 @@ export const designWorks1 = [
     categories: [`graphisme`, `photographie`],
     thumbnail: imgT6,
     otherImages: [
-      { thumbnail: imgT12 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+      
     ],
     link: "/portfolio-details-2",
     technologies: [illustrator, photoshop, photography]
@@ -106,10 +113,7 @@ export const designWorks1 = [
     categories: [`photographie`],
     thumbnail: imgT1,
     otherImages: [
-      { thumbnail: imgT12 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+      
     ],
     link: "/portfolio-details-2",
     technologies: [photoshop, photography]
@@ -130,10 +134,7 @@ export const designWorks1 = [
     categories: [`photographie`],
     thumbnail: imgT3,
     otherImages: [
-      { thumbnail: imgT12 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+     
     ],
     link: "/portfolio-details-2",
     technologies: [photoshop, photography]
@@ -145,10 +146,7 @@ export const designWorks1 = [
     categories: [`photographie`],
     thumbnail: imgT8,
     otherImages: [
-      { thumbnail: imgT12 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+     
     ],
     link: "/portfolio-details-2",
     technologies: [photoshop, photography]
@@ -160,10 +158,7 @@ export const designWorks1 = [
     categories: [`developpement web`],
     thumbnail: imgT9,
     otherImages: [
-      { thumbnail: imgT12 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+      
     ],
     link: "/portfolio-details-2",
     technologies: [vuejs, firebase]
@@ -175,10 +170,7 @@ export const designWorks1 = [
     categories: [`developpement web`],
     thumbnail: imgT10,
     otherImages: [
-      { thumbnail: imgT12 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+      
     ],
     link: "/portfolio-details-2",
     technologies: [react, redux, stripe, firebase, sass]
@@ -190,55 +182,64 @@ export const designWorks1 = [
     categories: [`graphisme`],
     thumbnail: imgT11,
     otherImages: [
-      { thumbnail: imgT12 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+      
     ],
     link: "/portfolio-details-2",
     technologies: [illustrator]
   },
+  // {
+  //   brand: `Stylisme danielle 2`,
+  //   slug: `stylisme`,
+  //   title: `Adaptable but Identifiable Product for Kandinsky.`,
+  //   categories: [`photographie`],
+  //   thumbnail: imgT12,
+  //   otherImages: [
+      
+  //   ],
+  //   link: "/portfolio-details-2",
+  //   technologies: [photoshop, photography]
+  // },
   {
-    brand: `Stylisme`,
-    slug: `stylisme`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
-    categories: [`photogrphie`],
-    thumbnail: imgT12,
-    otherImages: [
-      { thumbnail: imgT12 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
-    ],
-    link: "/portfolio-details-2",
-    technologies: [photoshop, photography]
-  },
-  {
-    brand: `Stylisme`,
+    brand: `Stylisme frederique`,
     slug: `stylisme`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photographie`],
     thumbnail: imgT13,
     otherImages: [
-      { thumbnail: imgT12 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+      {thumbnail:frederique1},
+      {thumbnail:frederique2},
+      // {thumbnail:frederique4},
+      {thumbnail:frederique3},
     ],
     link: "/portfolio-details-2",
     technologies: [photoshop, photography]
   },
   {
-    brand: `Stylisme`,
+    brand: `Stylisme Danielle`,
     slug: `stylisme`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photographie`],
     thumbnail: imgT14,
     otherImages: [
-      { thumbnail: imgT12 },
-      { thumbnail: imgT10 },
-      { thumbnail: imgT9 },
-      { thumbnail: imgT8 }
+      { thumbnail: danielle1 },
+      { thumbnail: danielle2 },
+      { thumbnail: danielle4 },
+      { thumbnail: danielle5 },
+      { thumbnail: danielle7 },
+      { thumbnail: danielle8 },
+    ],
+    link: "/portfolio-details-2",
+    technologies: [photoshop, photography]
+  },
+  {
+    brand: `Stylisme Danielle`,
+    slug: `stylisme`,
+    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    categories: [`photographie`],
+    thumbnail: imgT15,
+    otherImages: [
+      {thumbnail:genevieve1},
+      {thumbnail:genevieve2}
     ],
     link: "/portfolio-details-2",
     technologies: [photoshop, photography]
