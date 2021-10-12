@@ -5,8 +5,11 @@ import { Link } from "react-scroll";
 import imgBlood from "../../assets/my-images/svg/blood-splatter.svg";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 
+
 import { device } from "../../utils";
-import imgL from "../../assets/image/png/portrait-1.png";
+import imgL from "../../assets/my-images/jpg/main/main-image-1.jpg";
+
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 
 const ImgRight = styled.img`
   max-width: 100%;
@@ -24,6 +27,7 @@ const ImgBlood = styled.img`
 `;
 
 const Hero = () => {
+
   return (
     <>
       {/* <!-- Hero Area --> */}
@@ -59,7 +63,7 @@ const Hero = () => {
                 </Box>
 
                 <Title variant="hero">
-                  I design digital crafts for clients.
+                  <Trans>welcome</Trans>
                 </Title>
 
                 <Box mt="52px">
@@ -90,3 +94,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

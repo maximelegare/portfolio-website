@@ -13,24 +13,22 @@ import imgT13 from "../assets/my-images/jpg/13_photoshoot-stylisme.jpg";
 import imgT14 from "../assets/my-images/jpg/14_photoshoot-stylisme.jpg";
 import imgT15 from "../assets/my-images/jpg/15_photoshoot-stylisme.jpg";
 
-
-import danielle1 from "../assets/my-images/jpg/danielle/danielle-1.jpg"
-import danielle2 from "../assets/my-images/jpg/danielle/danielle-2.jpg"
-import danielle3 from "../assets/my-images/jpg/danielle/danielle-3.jpg"
-import danielle4 from "../assets/my-images/jpg/danielle/danielle-4.jpg"
-import danielle5 from "../assets/my-images/jpg/danielle/danielle-5.jpg"
-import danielle6 from "../assets/my-images/jpg/danielle/danielle-6.jpg"
-import danielle7 from "../assets/my-images/jpg/danielle/danielle-7.jpg"
+import danielle1 from "../assets/my-images/jpg/danielle/danielle-1.jpg";
+import danielle2 from "../assets/my-images/jpg/danielle/danielle-2.jpg";
+import danielle3 from "../assets/my-images/jpg/danielle/danielle-3.jpg";
+import danielle4 from "../assets/my-images/jpg/danielle/danielle-4.jpg";
+import danielle5 from "../assets/my-images/jpg/danielle/danielle-5.jpg";
+import danielle6 from "../assets/my-images/jpg/danielle/danielle-6.jpg";
+import danielle7 from "../assets/my-images/jpg/danielle/danielle-7.jpg";
 import danielle8 from "../assets/my-images/jpg/danielle/danielle-8.jpg";
 
-import frederique1 from '../assets/my-images/jpg/frederique/frederique-1.jpg'
-import frederique2 from '../assets/my-images/jpg/frederique/frederique-2.jpg'
-import frederique3 from '../assets/my-images/jpg/frederique/frederique-3.jpg'
+import frederique1 from "../assets/my-images/jpg/frederique/frederique-1.jpg";
+import frederique2 from "../assets/my-images/jpg/frederique/frederique-2.jpg";
+import frederique3 from "../assets/my-images/jpg/frederique/frederique-3.jpg";
 // import frederique4 from '../assets/my-images/jpg/frederique/frederique-4.jpg'
 
-import genevieve1 from '../assets/my-images/jpg/genevieve/genevieve-1.jpg'
-import genevieve2 from '../assets/my-images/jpg/genevieve/genevieve-2.jpg'
-
+import genevieve1 from "../assets/my-images/jpg/genevieve/genevieve-1.jpg";
+import genevieve2 from "../assets/my-images/jpg/genevieve/genevieve-2.jpg";
 
 import photography from "../assets/my-images/svg/technologies/camera3.svg";
 import illustrator from "../assets/my-images/svg/technologies/illustrator.svg";
@@ -54,9 +52,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`graphisme`],
     thumbnail: imgT4,
-    otherImages: [
-      
-    ],
+    otherImages: [],
     link: "/portfolio-details-2",
     technologies: [illustrator, photoshop, photography]
   },
@@ -66,9 +62,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`developpement web`, `photographie`, `graphisme`],
     thumbnail: imgT5,
-    otherImages: [
-      
-    ],
+    otherImages: [],
     link: "/portfolio-details-2",
     technologies: [
       react,
@@ -88,9 +82,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`graphisme`],
     thumbnail: imgT2,
-    otherImages: [
-      
-    ],
+    otherImages: [],
     link: "/portfolio-details-2",
     technologies: [illustrator]
   },
@@ -100,9 +92,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`graphisme`, `photographie`],
     thumbnail: imgT6,
-    otherImages: [
-      
-    ],
+    otherImages: [],
     link: "/portfolio-details-2",
     technologies: [illustrator, photoshop, photography]
   },
@@ -112,9 +102,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photographie`],
     thumbnail: imgT1,
-    otherImages: [
-      
-    ],
+    otherImages: [],
     link: "/portfolio-details-2",
     technologies: [photoshop, photography]
   },
@@ -133,9 +121,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photographie`],
     thumbnail: imgT3,
-    otherImages: [
-     
-    ],
+    otherImages: [],
     link: "/portfolio-details-2",
     technologies: [photoshop, photography]
   },
@@ -145,9 +131,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photographie`],
     thumbnail: imgT8,
-    otherImages: [
-     
-    ],
+    otherImages: [],
     link: "/portfolio-details-2",
     technologies: [photoshop, photography]
   },
@@ -157,9 +141,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`developpement web`],
     thumbnail: imgT9,
-    otherImages: [
-      
-    ],
+    otherImages: [],
     link: "/portfolio-details-2",
     technologies: [vuejs, firebase]
   },
@@ -169,9 +151,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`developpement web`],
     thumbnail: imgT10,
-    otherImages: [
-      
-    ],
+    otherImages: [],
     link: "/portfolio-details-2",
     technologies: [react, redux, stripe, firebase, sass]
   },
@@ -181,9 +161,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`graphisme`],
     thumbnail: imgT11,
-    otherImages: [
-      
-    ],
+    otherImages: [],
     link: "/portfolio-details-2",
     technologies: [illustrator]
   },
@@ -194,7 +172,7 @@ export const designWorks1 = [
   //   categories: [`photographie`],
   //   thumbnail: imgT12,
   //   otherImages: [
-      
+
   //   ],
   //   link: "/portfolio-details-2",
   //   technologies: [photoshop, photography]
@@ -206,10 +184,10 @@ export const designWorks1 = [
     categories: [`photographie`],
     thumbnail: imgT13,
     otherImages: [
-      {thumbnail:frederique1},
-      {thumbnail:frederique2},
+      { thumbnail: frederique1 },
+      { thumbnail: frederique2 },
       // {thumbnail:frederique4},
-      {thumbnail:frederique3},
+      { thumbnail: frederique3 }
     ],
     link: "/portfolio-details-2",
     technologies: [photoshop, photography]
@@ -226,7 +204,7 @@ export const designWorks1 = [
       { thumbnail: danielle4 },
       { thumbnail: danielle5 },
       { thumbnail: danielle7 },
-      { thumbnail: danielle8 },
+      { thumbnail: danielle8 }
     ],
     link: "/portfolio-details-2",
     technologies: [photoshop, photography]
@@ -237,10 +215,7 @@ export const designWorks1 = [
     title: `Adaptable but Identifiable Product for Kandinsky.`,
     categories: [`photographie`],
     thumbnail: imgT15,
-    otherImages: [
-      {thumbnail:genevieve1},
-      {thumbnail:genevieve2}
-    ],
+    otherImages: [{ thumbnail: genevieve1 }, { thumbnail: genevieve2 }],
     link: "/portfolio-details-2",
     technologies: [photoshop, photography]
   }
