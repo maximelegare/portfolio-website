@@ -14,6 +14,8 @@ import { menuItems } from "./menuItems";
 import { useI18next } from "gatsby-plugin-react-i18next";
 import { Link as LinkI18n } from "gatsby-plugin-react-i18next";
 
+import "flag-icon-css/css/flag-icon.min.css";
+
 const SiteHeader = styled.header`
   padding: 0;
   position: absolute !important;
@@ -113,8 +115,8 @@ const MenuDropdown = styled.ul`
   @media ${device.lg} {
     top: 110%;
     position: absolute;
-    min-width: 227px;
-    max-width: 227px;
+    min-width: 150px;
+    max-width: 150px;
     box-shadow: 0 52px 54px rgba(65, 62, 101, 0.3);
 
     background-color: ${({ dark, theme }) => theme.colors.light};
@@ -277,13 +279,17 @@ const Header = ({ isDark }) => {
                     <MenuDropdown
                       className="menu-dropdown dropdown-right"
                       dark={isDark ? 1 : 0}
+                      style={{width:"10px"}}
                     >
                       {languages.map(lng => {
                         console.log(languages);
                         return (
                           <li key={lng.name}>
                             <LinkI18n to={originalPath} language={lng.code}>
-                              {lng.name}
+                              <span
+                                className={`flag-icon flag-icon-${lng.country_code} mx-2`}
+                              ></span>
+                              <span style={{width:"100%"}}>{lng.name}</span>
                             </LinkI18n>
                           </li>
                         );
