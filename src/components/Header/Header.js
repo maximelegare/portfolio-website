@@ -16,6 +16,10 @@ import { Link as LinkI18n } from "gatsby-plugin-react-i18next";
 
 import "flag-icon-css/css/flag-icon.min.css";
 
+import globe from '../../assets/my-images/svg/globe.svg'
+
+import IconTechnology from "../IconTechnology";
+
 const SiteHeader = styled.header`
   padding: 0;
   position: absolute !important;
@@ -265,38 +269,6 @@ const Header = ({ isDark }) => {
                   className="navbar-nav d-none d-lg-flex"
                   dark={isDark ? 1 : 0}
                 >
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-expanded="false"
-                      href="/"
-                      onClick={e => e.preventDefault()}
-                    >
-                      Languages
-                    </a>
-                    <MenuDropdown
-                      className="menu-dropdown dropdown-right"
-                      dark={isDark ? 1 : 0}
-                      style={{width:"10px"}}
-                    >
-                      {languages.map(lng => {
-                        console.log(languages);
-                        return (
-                          <li key={lng.name}>
-                            <LinkI18n to={originalPath} language={lng.code}>
-                              <span
-                                className={`flag-icon flag-icon-${lng.country_code} mx-2`}
-                              ></span>
-                              <span style={{width:"100%"}}>{lng.name}</span>
-                            </LinkI18n>
-                          </li>
-                        );
-                      })}
-                    </MenuDropdown>
-                  </li>
-
                   {/* Open about modal */}
                   <li>
                     <Link
@@ -344,14 +316,36 @@ const Header = ({ isDark }) => {
                       contact.
                     </a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item dropdown">
                     <a
-                      className="nav-link"
-                      href="https://uxtheme.net/theme-support"
-                      target="_blank"
+                      className="nav-link dropdown-toggle"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                      href="/"
+                      onClick={e => e.preventDefault()}
                     >
-                      support
+                      <IconTechnology icon={globe}/>
                     </a>
+                    <MenuDropdown
+                      className="menu-dropdown dropdown-right"
+                      dark={isDark ? 1 : 0}
+                      style={{ width: "10px" }}
+                    >
+                      {languages.map(lng => {
+                        console.log(languages);
+                        return (
+                          <li key={lng.name} style={{ margin: "5px 0" }}>
+                            <LinkI18n to={originalPath} language={lng.code}>
+                              <span
+                                className={`flag-icon flag-icon-${lng.country_code} mx-2`}
+                              ></span>
+                              <span style={{ width: "100%" }}>{lng.name}</span>
+                            </LinkI18n>
+                          </li>
+                        );
+                      })}
+                    </MenuDropdown>
                   </li>
                 </Menu>
               </div>
