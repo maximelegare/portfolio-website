@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Omega Gatsby`,
+    title: `Omega Gatsby`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,13 +20,23 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        languages: [ `en`,`fr`],
-        defaultLanguage: `fr`,
+        languages: ["en", "fr"],
+        // defaultLanguage: `fr`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `https://localhost:8000/`,
+        // siteUrl: `https://localhost:8000/`,
         // you can pass any i18next options
         // pass following options to allow message content as a key
         i18nextOptions: {
+          detection: {
+            order: [
+              "path",
+              "cookie",
+              "localStorage",
+              "navigator",
+              "htmlTag",
+              "subdomain"
+            ]
+          },
           interpolation: {
             escapeValue: false // not needed for react as it escapes by default
           },
@@ -35,16 +45,16 @@ module.exports = {
         },
         pages: [
           {
-            matchPath: '/:lang?/',
+            matchPath: "/:lang?/",
             getLanguageFromPath: true,
             excludeLanguages: []
           },
           {
-            matchPath: '/preview',
-            languages: []
+            matchPath: "/preview",
+            languages: [`en`, "fr", "es"]
           }
         ]
       }
     }
-  ],
+  ]
 };
