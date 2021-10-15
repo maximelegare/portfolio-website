@@ -47,9 +47,7 @@ import styledcomponent from "../assets/my-images/svg/technologies/styledcomponen
 
 export const designWorks1 = [
   {
-    brand: `Stylisme`,
-    slug: `stylisme`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a1',
     categories: [`graphisme`],
     thumbnail: imgT4,
     otherImages: [],
@@ -57,9 +55,7 @@ export const designWorks1 = [
     technologies: [illustrator, photoshop, photography]
   },
   {
-    brand: `Création de vêtements`,
-    slug: `creation-de-vêtements`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a2',
     categories: [`developpement web`, `photographie`, `graphisme`],
     thumbnail: imgT5,
     otherImages: [],
@@ -77,9 +73,7 @@ export const designWorks1 = [
     ]
   },
   {
-    brand: `Création de vêtements`,
-    slug: `creation-de-vêtements`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a3',
     categories: [`graphisme`],
     thumbnail: imgT2,
     otherImages: [],
@@ -87,9 +81,7 @@ export const designWorks1 = [
     technologies: [illustrator]
   },
   {
-    brand: `Stylisme`,
-    slug: `stylisme`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a4',
     categories: [`graphisme`, `photographie`],
     thumbnail: imgT6,
     otherImages: [],
@@ -97,9 +89,7 @@ export const designWorks1 = [
     technologies: [illustrator, photoshop, photography]
   },
   {
-    brand: `Stylisme`,
-    slug: `stylisme`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a5',
     categories: [`photographie`],
     thumbnail: imgT1,
     otherImages: [],
@@ -107,18 +97,14 @@ export const designWorks1 = [
     technologies: [photoshop, photography]
   },
   {
-    brand: `Timers & Todos`,
-    slug: `timers-&-todos`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a6',
     categories: [`developpement web`, `graphisme`],
     thumbnail: imgT7,
     link: "/portfolio-details-2",
     technologies: [vuejs, firebase]
   },
   {
-    brand: `Photographie d'horreur`,
-    slug: `photographie d'horreur`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a7',
     categories: [`photographie`],
     thumbnail: imgT3,
     otherImages: [],
@@ -126,9 +112,7 @@ export const designWorks1 = [
     technologies: [photoshop, photography]
   },
   {
-    brand: `Photographie d'horreur`,
-    slug: `photographie-d'horreur`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a8',
     categories: [`photographie`],
     thumbnail: imgT8,
     otherImages: [],
@@ -136,9 +120,7 @@ export const designWorks1 = [
     technologies: [photoshop, photography]
   },
   {
-    brand: `Trouver un mentor`,
-    slug: `trouver-un-mentor`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a9',
     categories: [`developpement web`],
     thumbnail: imgT9,
     otherImages: [],
@@ -146,9 +128,7 @@ export const designWorks1 = [
     technologies: [vuejs, firebase]
   },
   {
-    brand: `Vente de vêtements`,
-    slug: `vente-de-vêtements`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a10',
     categories: [`developpement web`],
     thumbnail: imgT10,
     otherImages: [],
@@ -156,9 +136,7 @@ export const designWorks1 = [
     technologies: [react, redux, stripe, firebase, sass]
   },
   {
-    brand: `T-shirt Design`,
-    slug: `t-shirt Design`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a11',
     categories: [`graphisme`],
     thumbnail: imgT11,
     otherImages: [],
@@ -178,9 +156,7 @@ export const designWorks1 = [
   //   technologies: [photoshop, photography]
   // },
   {
-    brand: `Stylisme frederique`,
-    slug: `stylisme`,
-    title: `Adaptable but Identifiable Product for Kandinsky.`,
+    id:'a12',
     categories: [`photographie`],
     thumbnail: imgT13,
     otherImages: [
@@ -193,6 +169,7 @@ export const designWorks1 = [
     technologies: [photoshop, photography]
   },
   {
+    id:'a13',
     brand: `Stylisme Danielle`,
     slug: `stylisme`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
@@ -210,6 +187,7 @@ export const designWorks1 = [
     technologies: [photoshop, photography]
   },
   {
+    id:'a14',
     brand: `Stylisme Danielle`,
     slug: `stylisme`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,

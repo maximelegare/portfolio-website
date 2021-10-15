@@ -5,7 +5,7 @@ import GlobalContext from "../../context/GlobalContext";
 const themeConfigDefault = {
   headerDark: false,
   bodyDark: false,
-  footerDark: false,
+  footerDark: false
 };
 
 const PageWrapper = ({ children, darkTheme = false, themeConfig = null }) => {
@@ -16,7 +16,7 @@ const PageWrapper = ({ children, darkTheme = false, themeConfig = null }) => {
       gContext.changeTheme({
         headerDark: true,
         bodyDark: true,
-        footerDark: true,
+        footerDark: true
       });
     } else {
       gContext.changeTheme({ ...themeConfigDefault, ...themeConfig });

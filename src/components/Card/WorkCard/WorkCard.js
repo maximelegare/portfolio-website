@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import { Box, Title, Text } from "../../Core";
@@ -6,6 +6,9 @@ import { Box, Title, Text } from "../../Core";
 import GlobalContext from "../../../context/GlobalContext";
 import IconTechnology from "../../IconTechnology";
 // import icon from '../../assets/my-images/svg/technologies/react.svg'
+
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+
 
 const WorkBox = styled(Box)`
   border-radius: 8px;
@@ -26,7 +29,7 @@ const TextBox = styled(Box)`
   z-index: 1;
   padding: 1.25rem 1.875rem;
   transition: 0.4s;
-  box-shadow: 0 3px 3px #a2a2a2;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
   &::before {
     position: absolute;
     content: "";
@@ -46,14 +49,30 @@ const TextBox = styled(Box)`
 `;
 
 const WorkCard = ({ workItem, link, ...rest }) => {
+  
   const gContext = useContext(GlobalContext)
+  const { t } = useTranslation()
+  
 
+  const traductionData = t(`${workItem.id}`, {returnObjects:true})
+  // console.log(translatedText)
+  
   const handleClick = () => {
     gContext.changeSelectedProjectSpecifications(workItem)
     gContext.toggleProjectSpecifications()
   }
 
+
+
+  const [textTraduction, setTextTraduction] = useState({}); 
   
+  useEffect(() => {
+    setTextTraduction(traductionData)
+    console.log(textTraduction)
+  },[traductionData])
+  
+
+
   return(
   <WorkBox className="position-relative" {...rest}>
     <div className="d-block" onClick={handleClick}>
@@ -62,10 +81,11 @@ const WorkCard = ({ workItem, link, ...rest }) => {
 
     <TextBox>
       <Text variant="tag" mb={2}>
-        {workItem?.categories[0]}
+        {textTraduction.categories}
       </Text>
       <Title variant="card">
-        <div onClick={handleClick}>{workItem.brand} </div>
+        {/* <Trans onClick={handleClick}>a1.brand</Trans> */}
+        <div onClick={handleClick}>{textTraduction.brand}</div>
       </Title>
 
       {workItem.technologies.filter((_, index) => index < 3 ).map(icon => (

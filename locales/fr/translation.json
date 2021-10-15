@@ -1,6 +1,87 @@
 {
-    "welcome":"Bienvenue!"
+  "welcome": "Bienvenue!",
+  "a1": {
+    "brand": "France Lavoie, styliste",
+    "slug": "stylisme",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Graphisme"]
+  },
+  "a2": {
+    "brand": "Bikanky montréal",
+    "slug": "creation-de-vêtements",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Developpement web"]
+  },
+  "a3": {
+    "brand": "Concept Artistique",
+    "slug": "Affiche de film fictif",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Graphisme"]
+  },
+  "a4": {
+    "brand": "France Lavoie, styliste",
+    "slug": "Site web de stylism",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Developpement web"]
+  },
+  "a5": {
+    "brand": "",
+    "slug": "Website with payments",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Photographie"]
+  },
+  "a6": {
+    "brand": "Timing-app",
+    "slug": "",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Developpement web"]
+  },
+  "a7": {
+    "brand": "Concept Artistique",
+    "slug": "Website with payments",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Photographie"]
+  },
+  "a8": {
+    "brand": "Concept Artistique",
+    "slug": "Website with payments",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Photographie"]
+  },
+  "a9": {
+    "brand": "Find a Coach app",
+    "slug": "",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Developpement"]
+  },
+  "a10": {
+    "brand": "Crown-shop",
+    "slug": "Website with payments",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Developpement web"]
+  },
+  "a11": {
+    "brand": "Designs de Chandails",
+    "slug": "Website with payments",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Graphisme"]
+  },
+  "a12": {
+    "brand": "Photographie de mode",
+    "slug": "Website with payments",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Photographie"]
+  },
+  "a13": {
+    "brand": "Photographie de mode",
+    "slug": "Website with payments",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Photographie"]
+  },
+  "a14": {
+    "brand": "Photographie de mode",
+    "slug": "Website with payments",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "categories": ["Photographie"]
+  }
 }
-
-
-
