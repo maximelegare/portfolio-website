@@ -99,6 +99,7 @@ export const designWorks1 = [
   {
     id:'a6',
     categories: [`developpement web`, `graphisme`],
+    otherImages: [],
     thumbnail: imgT7,
     link: "/portfolio-details-2",
     technologies: [vuejs, firebase]

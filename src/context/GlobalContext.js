@@ -21,6 +21,7 @@ const GlobalProvider = ({ children }) => {
 
   // manage the selected project data to send to the projectSpecificationModal
   const [selectedProjectSpecifications, setSelectedProjectSpecifications] = useState(null)
+  const [selectedProjectTraductions, setSelectedProjectTranslations] = useState(null)
   const [projectSpecificationsVisible, setProjectSpecificationsVisible] = useState(false)
 
 
@@ -35,6 +36,9 @@ const GlobalProvider = ({ children }) => {
   }
   const closeProjectSpecifications = () => {
     setProjectSpecificationsVisible(false)
+  }
+  const changeSelectedProjectTraductions = (data) => {
+    setSelectedProjectTranslations(data)
   }
 
   //////////////////////////////////////////////////////////////
@@ -92,7 +96,9 @@ const GlobalProvider = ({ children }) => {
         selectedProjectSpecifications,
         toggleProjectSpecifications,
         closeProjectSpecifications,
-        projectSpecificationsVisible
+        projectSpecificationsVisible,
+        selectedProjectTraductions,
+        changeSelectedProjectTraductions
       }}
     >
       {children}

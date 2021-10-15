@@ -3,19 +3,20 @@
   "a1": {
     "brand": "France Lavoie, styliste",
     "slug": "stylisme",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "Une Carte d'affaire stylisée pour une styliste.",
+    "description":"",
     "categories": ["Graphisme"]
   },
   "a2": {
     "brand": "Bikanky montréal",
     "slug": "creation-de-vêtements",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "Réalisation d'un site web payant pour Bikanky montréal",
     "categories": ["Developpement web"]
   },
   "a3": {
     "brand": "Concept Artistique",
     "slug": "Affiche de film fictif",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "Être une princesse, c'est épuisant!",
     "categories": ["Graphisme"]
   },
   "a4": {
@@ -33,13 +34,13 @@
   "a6": {
     "brand": "Timing-app",
     "slug": "",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "une",
     "categories": ["Developpement web"]
   },
   "a7": {
     "brand": "Concept Artistique",
-    "slug": "Website with payments",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "slug": "",
+    "title": "Project inspiré de American Horror Story ",
     "categories": ["Photographie"]
   },
   "a8": {

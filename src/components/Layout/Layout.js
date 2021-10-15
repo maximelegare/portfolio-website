@@ -3,7 +3,7 @@ import React, {
   useEffect,
   useLayoutEffect,
   useContext,
-  useRef,
+  useRef
 } from "react";
 
 import styled, { ThemeProvider } from "styled-components";
@@ -19,6 +19,7 @@ import ContactModal from "../ContactModal";
 import AboutModal from "../AboutModal";
 import ProjectSpecificationModal from "../ProjectSpecificationsModal/ProjectSpecificationsModal";
 
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import GlobalContext from "../../context/GlobalContext";
 
@@ -64,12 +65,13 @@ const modes = { light: "light", dark: "dark" };
 
 // merge the color mode with the base theme
 // to create a new theme object
-const getTheme = (mode) =>
+const getTheme = mode =>
   merge({}, baseTheme, {
-    colors: get(baseTheme.colors.modes, mode, baseTheme.colors),
+    colors: get(baseTheme.colors.modes, mode, baseTheme.colors)
   });
 
 const Layout = ({ children, pageContext }) => {
+  const { t } = useTranslation();
   const gContext = useContext(GlobalContext);
 
   const [visibleLoader, setVisibleLoader] = useState(true);
@@ -90,7 +92,6 @@ const Layout = ({ children, pageContext }) => {
         gContext.closeAbout();
         gContext.closeContact();
         gContext.closeProjectSpecifications();
-
       },
       false
     );
@@ -161,7 +162,9 @@ const Layout = ({ children, pageContext }) => {
         <AboutModal />
         <ContactModal />
         <ModalVideo />
-        <ProjectSpecificationModal workItem={gContext.selectedProjectSpecifications}/>
+        <ProjectSpecificationModal
+          workItem={gContext.selectedProjectSpecifications}
+        />
       </ThemeProvider>
     </>
   );

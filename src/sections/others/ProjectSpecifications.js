@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import GlobalContext from "../../context/GlobalContext";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
+
 
 import Masonry from "react-masonry-component";
 
@@ -27,22 +29,23 @@ const LinkSocial = styled.a`
   }
 `;
 
-
-
-
-
-
 const ProjectSpecifications = ({
   workItem,
   hero = true,
   bg = "dark",
   ...rest
 }) => {
-  const { thumbnail, technologies, categories, otherImages } = workItem;
+  const gContext = useContext(GlobalContext)
+
+  const { thumbnail, technologies, otherImages } = workItem;
+  const {categories, description, title} = gContext.selectedProjectTraductions;
+
+  console.log(gContext.selectedProjectTraductions)
 
   const masonryOptions = {
     transitionDuration: 1000
   };
+
 
   return (
     <>
@@ -51,7 +54,10 @@ const ProjectSpecifications = ({
           <Row className="justify-content-center text-center">
             <Col lg="8">
               <Box>
-                {categories.map((category, index) => {
+                <p>
+                  {/* {textTraduction.brand} */}
+                </p>
+                {categories?.map((category, index) => {
                   return (
                     <Text
                       variant="tag"
@@ -65,7 +71,7 @@ const ProjectSpecifications = ({
                   );
                 })}
                 <Title className="my-4">
-                  Complete Branding <br /> Solution for DataTryper.
+                  {title}
                 </Title>
                 <div className="mt-3">
                   {technologies.map(icon => (
@@ -92,7 +98,7 @@ const ProjectSpecifications = ({
                   alt=""
                   thumbnail={thumbnail}
                   className="img-fluid  w-auto"
-                  css={{maxHeight:"70vh"}}
+                  css={{ maxHeight: "70vh" }}
                 />
               </Row>
             </Col>
@@ -187,7 +193,7 @@ const ProjectSpecifications = ({
               </Title>
             </Col>
             <Col lg="4" className="d-flex justify-content-lg-end">
-              <Button arrowRight>Live work</Button>
+              <Button>Live work</Button>
             </Col>
           </Row>
         </Container>
@@ -203,7 +209,7 @@ const ProjectSpecifications = ({
                 <Col lg="4" md="6" sm="12" key={index} className="filtr-item">
                   <ImageCard
                     thumbnail={item.thumbnail}
-                    css={{marginTop:"30px"}}
+                    css={{ marginTop: "30px" }}
                     className="w-100"
                   />
                 </Col>

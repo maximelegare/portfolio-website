@@ -80,6 +80,8 @@ const CloseButton = props => (
 
 const ProjectSpecificationModal = ({ workItem, ...rest }) => {
   const gContext = useContext(GlobalContext);
+  
+
 
   return (
     <ModalStyled

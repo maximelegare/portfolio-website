@@ -7,7 +7,7 @@ import GlobalContext from "../../../context/GlobalContext";
 import IconTechnology from "../../IconTechnology";
 // import icon from '../../assets/my-images/svg/technologies/react.svg'
 
-import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import {useTranslation} from 'gatsby-plugin-react-i18next';
 
 
 const WorkBox = styled(Box)`
@@ -55,12 +55,15 @@ const WorkCard = ({ workItem, link, ...rest }) => {
   
 
   const traductionData = t(`${workItem.id}`, {returnObjects:true})
-  // console.log(translatedText)
+  // console.log(traductionData)
   
   const handleClick = () => {
     gContext.changeSelectedProjectSpecifications(workItem)
     gContext.toggleProjectSpecifications()
+    gContext.changeSelectedProjectTraductions(traductionData)
   }
+
+
 
 
 
@@ -68,7 +71,6 @@ const WorkCard = ({ workItem, link, ...rest }) => {
   
   useEffect(() => {
     setTextTraduction(traductionData)
-    console.log(textTraduction)
   },[traductionData])
   
 
