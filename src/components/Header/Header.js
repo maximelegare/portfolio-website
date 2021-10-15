@@ -16,9 +16,13 @@ import { Link as LinkI18n } from "gatsby-plugin-react-i18next";
 
 import "flag-icon-css/css/flag-icon.min.css";
 
-import globe from '../../assets/my-images/svg/globe.svg'
+import globe from "../../assets/my-images/svg/globe.svg";
 
 import IconTechnology from "../IconTechnology";
+
+const LinkI18nStyled = styled(LinkI18n)`
+margin-left: 5px;
+`;
 
 const SiteHeader = styled.header`
   padding: 0;
@@ -220,17 +224,21 @@ const Header = ({ isDark }) => {
     {
       code: "fr",
       name: "Français",
-      country_code: "fr"
+      country_code: "fr",
+      url: "/fr"
     },
     {
       code: "en",
       name: "English",
       country_code: "gb",
+      url: "/",
       default: true
     }
   ];
 
   const { originalPath } = useI18next();
+
+  const currentLanguageCode = localStorage.getItem("gatsby-i18next-language");
 
   const gContext = useContext(GlobalContext);
   const [showScrolling, setShowScrolling] = useState(false);
@@ -318,14 +326,14 @@ const Header = ({ isDark }) => {
                   </li>
                   <li className="nav-item dropdown">
                     <a
-                      className="nav-link dropdown-toggle"
+                      className="nav-link"
                       role="button"
                       data-toggle="dropdown"
                       aria-expanded="false"
                       href="/"
                       onClick={e => e.preventDefault()}
                     >
-                      <IconTechnology icon={globe}/>
+                      <IconTechnology icon={globe} />
                     </a>
                     <MenuDropdown
                       className="menu-dropdown dropdown-right"
@@ -333,15 +341,21 @@ const Header = ({ isDark }) => {
                       style={{ width: "10px" }}
                     >
                       {languages.map(lng => {
-                        console.log(languages);
                         return (
                           <li key={lng.name} style={{ margin: "5px 0" }}>
-                            <LinkI18n to={originalPath} language={lng.code}>
+                            <LinkI18nStyled
+                              to={originalPath}
+                              language={lng.code}
+                              css={{
+                                textDecorationLine:
+                                  lng.code === currentLanguageCode ? "underline" : ""
+                              }}
+                            >
                               <span
                                 className={`flag-icon flag-icon-${lng.country_code} mx-2`}
                               ></span>
                               <span style={{ width: "100%" }}>{lng.name}</span>
-                            </LinkI18n>
+                            </LinkI18nStyled>
                           </li>
                         );
                       })}
