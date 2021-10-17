@@ -3,7 +3,7 @@ import GlobalContext from "../../context/GlobalContext";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
-import TitleWithImage from "../../components/TitleWithImage/TitleWithImage";
+import Specifications from "../../components/Specificatons/Specifications";
 
 import Masonry from "react-masonry-component";
 
@@ -38,12 +38,12 @@ const ProjectSpecifications = ({
 }) => {
   const gContext = useContext(GlobalContext);
 
-  const { thumbnail, technologies, otherImages, lists } = workItem;
+  const { thumbnail, technologies, otherImages, specifications } = workItem;
   const {
     categories,
-    descriptionTop,
-    descriptionMain,
-    title
+    descriptions,
+    title,
+    textSpecifications
   } = gContext.selectedProjectTraductions;
 
   console.log(gContext.selectedProjectTraductions);
@@ -104,28 +104,30 @@ const ProjectSpecifications = ({
               </Row>
             </Col>
             <Col lg="6">
-              <div className="pl-lg-4 pt-5 pt-lg-0">
-                <Text
-                  color="dark"
-                  css={`
-                    line-height: 1.5;
-                  `}
-                >
-                  {descriptionTop}
-                </Text>
-                <Text
-                  color="dark"
-                  className="mt-4"
-                  css={`
-                    line-height: 1.5;
-                  `}
-                >
-                  {descriptionMain}
-                </Text>
-                <TitleWithImage lists={lists} />
+              <div className="pl-lg-4">
+                <Title variant="card" className="mb-3">
+                  {descriptions.mainTitle}
+                </Title>
+                <div className="pl-lg-2">
+                  {descriptions.items.map((description, idx) => (
+                    <Text
+                      key={idx}
+                      // color="dark"
+                      className={idx !== descriptions.length - 1 ? "mb-4" : ""}
+                      css={`
+                        line-height: 1.5;
+                      `}
+                    >
+                      {description.content}
+                    </Text>
+                  ))}
+                </div>
               </div>
             </Col>
           </Row>
+        </Container>
+        <Container>
+          <Specifications specifications={specifications} textSpecifications={textSpecifications}/>
         </Container>
       </Section>
 

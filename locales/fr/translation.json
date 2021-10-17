@@ -4,14 +4,55 @@
     "brand": "France Lavoie, styliste",
     "slug": "stylisme",
     "title": "Une Carte d'affaire stylisée pour une styliste.",
-    "descriptionTop": "Design d'une carte d'affaire pour la compagnie France Lavoie, Styliste.",
-    "descriptionMain": "Le design élégant tout en restant particulièrement distinct. La présence d'une règle ainsi que d'un motif de vêtements sur le revers rappelent la profession de styliste.",
+    "descriptions": {
+      "mainTitle": "",
+      "items": [
+        {
+          "title": "",
+          "content": "Design d'une carte d'affaire pour la compagnie France Lavoie, Styliste."
+        },
+        {
+          "title": "",
+          "content": "Le design élégant tout en restant particulièrement distinct. La présence d'une règle ainsi que d'un motif de vêtements sur le revers rappelent la profession de styliste."
+        }
+      ]
+    },
+
     "categories": ["Graphisme"]
   },
   "a2": {
     "brand": "Bikanky montréal",
     "slug": "creation-de-vêtements",
-    "title": "Réalisation d'un site web payant pour Bikanky montréal",
+    "title": "Un site web transactionnel, de A à Z, sort of",
+    "descriptions": {
+      "mainTitle": "À propos du site",
+      "items": [
+        {
+          "title": "",
+          "content": "Bikanky montréal est une entreprise Freelance qui avait besoin d'un site web transactionel pour la vente de vêtements."
+        },
+        {
+          "title": "",
+          "content": "Combinant React et Redux pour le front-end, le site web a une structure propice à l'expansion. La réutilisation de composantes ainsi que l'utilisation de Higher Order Components (HOC) sont des concepts importants qui ont été pris en compte tout au long de la conception."
+        },
+        {
+          "title": "",
+          "content": "La gestion d'utilisateurs ainsi que le stockage des données se fait entièrement à l'aide de Firebase. En ce qui concerne les transactions, Stripe s'occupe de pratiquement tout."
+        }
+      ]
+    },
+    "textSpecifications": [
+      {
+        "title": "This is a title",
+        "content": "this is some content",
+        "bulletPoints": [
+          { "content": "this is a bullet point" },
+          {
+            "content": "Le design élégant tout en restant particulièrement distinct. La présence d'une règle ainsi que d'un motif de vêtements sur le revers rappelent la profession de styliste."
+          }
+        ]
+      }
+    ],
     "categories": ["Developpement web"]
   },
   "a3": {

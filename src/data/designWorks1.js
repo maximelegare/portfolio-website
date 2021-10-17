@@ -60,11 +60,10 @@ export const designWorks1 = [
     otherImages: [],
     link: "/portfolio-details-2",
     technologies: [illustrator, photoshop, photography],
-    lists: [
-      { title: `Montserrat Semi-Bold 400`, image:montserrat_semiBold, dim:true},
-      { title: `Montserrat Regular`, image:montserrat_regular, dim:true},
+    specifications: [
+      { title: "Montserrat Semi-Bold 400", image:montserrat_semiBold, dim:true},
+      { title: "Montserrat Regular", image:montserrat_regular, dim:true},
       { title: "Colors", image: flavoieColors },
-      // { title: "Colors", image: flavoieColors }
     ],
   },
   {
