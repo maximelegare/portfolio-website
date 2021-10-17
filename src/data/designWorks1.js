@@ -45,6 +45,13 @@ import materialui from "../assets/my-images/svg/technologies/materialui.svg";
 import styledcomponent from "../assets/my-images/svg/technologies/styledcomponent.svg";
 // import express from '../assets/my-images/svg/technologies/express.svg'
 
+
+import flavoieColors from '../assets/my-images/svg/colors/flavoie_buisness.svg'
+
+
+import montserrat_semiBold from '../assets/my-images/svg/typographies/montserrat_semiBold.svg'
+import montserrat_regular from '../assets/my-images/svg/typographies/montserrat_regular.svg'
+
 export const designWorks1 = [
   {
     id:'a1',
@@ -52,7 +59,13 @@ export const designWorks1 = [
     thumbnail: imgT4,
     otherImages: [],
     link: "/portfolio-details-2",
-    technologies: [illustrator, photoshop, photography]
+    technologies: [illustrator, photoshop, photography],
+    lists: [
+      { title: `Montserrat Semi-Bold 400`, image:montserrat_semiBold, dim:true},
+      { title: `Montserrat Regular`, image:montserrat_regular, dim:true},
+      { title: "Colors", image: flavoieColors },
+      // { title: "Colors", image: flavoieColors }
+    ],
   },
   {
     id:'a2',

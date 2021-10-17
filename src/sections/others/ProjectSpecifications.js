@@ -3,6 +3,7 @@ import GlobalContext from "../../context/GlobalContext";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
+import TitleWithImage from "../../components/TitleWithImage/TitleWithImage";
 
 import Masonry from "react-masonry-component";
 
@@ -35,17 +36,21 @@ const ProjectSpecifications = ({
   bg = "dark",
   ...rest
 }) => {
-  const gContext = useContext(GlobalContext)
+  const gContext = useContext(GlobalContext);
 
-  const { thumbnail, technologies, otherImages } = workItem;
-  const {categories, description, title} = gContext.selectedProjectTraductions;
+  const { thumbnail, technologies, otherImages, lists } = workItem;
+  const {
+    categories,
+    descriptionTop,
+    descriptionMain,
+    title
+  } = gContext.selectedProjectTraductions;
 
-  console.log(gContext.selectedProjectTraductions)
+  console.log(gContext.selectedProjectTraductions);
 
   const masonryOptions = {
     transitionDuration: 1000
   };
-
 
   return (
     <>
@@ -54,9 +59,7 @@ const ProjectSpecifications = ({
           <Row className="justify-content-center text-center">
             <Col lg="8">
               <Box>
-                <p>
-                  {/* {textTraduction.brand} */}
-                </p>
+                <p>{/* {textTraduction.brand} */}</p>
                 {categories?.map((category, index) => {
                   return (
                     <Text
@@ -70,9 +73,7 @@ const ProjectSpecifications = ({
                     </Text>
                   );
                 })}
-                <Title className="my-4">
-                  {title}
-                </Title>
+                <Title className="my-4">{title}</Title>
                 <div className="mt-3">
                   {technologies.map(icon => (
                     <IconTechnology key={icon} icon={icon} />
@@ -110,67 +111,18 @@ const ProjectSpecifications = ({
                     line-height: 1.5;
                   `}
                 >
-                  UX Designer based in New York, USA. I am designing with a
-                  minimal and beautiful design in mind.
+                  {descriptionTop}
                 </Text>
-                <Text color="dark" className="mt-4">
-                  I strive for a minimal and beautiful design.
+                <Text
+                  color="dark"
+                  className="mt-4"
+                  css={`
+                    line-height: 1.5;
+                  `}
+                >
+                  {descriptionMain}
                 </Text>
-                <div className="mt-4">
-                  <Text color="dark">Email me at</Text>
-
-                  <Text variant="p">
-                    <a
-                      href="mailto:hello@folio.com"
-                      className="font-weight-bold"
-                    >
-                      <Span color="dark">hello@folio.com</Span>
-                    </a>
-                  </Text>
-                </div>
-                <div className="mt-5">
-                  <img src={imgSignLight} alt="sign" className="img-fluid" />
-                </div>
-                <Text color="dark" className="mt-3 font-weight-bold">
-                  Bruce Ryan
-                </Text>
-                <Text color="dark" variant="small">
-                  Founder of Folio Digital
-                </Text>
-                <div className="mt-5 d-flex">
-                  <LinkSocial
-                    href="https://www.dribbble.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-3"
-                  >
-                    Dribble
-                  </LinkSocial>
-                  <LinkSocial
-                    href="https://www.twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className=" mr-3"
-                  >
-                    Twitter
-                  </LinkSocial>
-                  <LinkSocial
-                    href="https://www.facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-3"
-                  >
-                    Facebook
-                  </LinkSocial>
-                  <LinkSocial
-                    href="https://www.instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-weight-bold"
-                  >
-                    Instagram
-                  </LinkSocial>
-                </div>
+                <TitleWithImage lists={lists} />
               </div>
             </Col>
           </Row>
