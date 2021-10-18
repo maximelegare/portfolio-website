@@ -62,7 +62,7 @@ export const designWorks1 = [
     technologies: [illustrator, photoshop, photography],
     specifications: [
       { title: "Montserrat Semi-Bold 400", image:montserrat_semiBold, dim:true},
-      { title: "Montserrat Regular", image:montserrat_regular, dim:true},
+      { title: "Montserrat Regular", image:montserrat_regular},
       { title: "Colors", image: flavoieColors },
     ],
   },

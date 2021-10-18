@@ -10,49 +10,60 @@ const Wrapper = styled.div`
 const ImgStyled = styled.img`
   width: 175px;
   margin-top: 6px;
-  margin-left: 10px;
   height: auto;
 `;
 
 const ItemWrapper = styled.div`
-  margin-top: 10px;
+  margin-bottom: 25px;
 `;
 
 const Specifications = ({ specifications, textSpecifications }) => {
   return (
-    <>
+    <Wrapper>
       {specifications && (
-        <Wrapper>
+        <>
           {specifications.map(({ title, image, dim }, idx) => (
             <ItemWrapper key={idx}>
               <Title color="dark" variant="card">
                 {title}
               </Title>
-              <ImgStyled src={image} style={{ opacity: dim ? "0.8" : "" }} />
+              <div className="pl-lg-2">
+                <ImgStyled src={image} style={{ opacity: dim ? "0.6" : "" }} />
+              </div>
             </ItemWrapper>
           ))}
-        </Wrapper>
+        </>
       )}
       {textSpecifications && (
-        <Wrapper>
-          {textSpecifications.map(({ title, content, bulletPoints }, idx) => (
-            <ItemWrapper key={idx}>
-              <Title color="dark" variant="card">
-                {title}
-              </Title>
-              {content && <Text>{content}</Text>}
-              {bulletPoints && (
-                <>
-                  {bulletPoints.map(({ content }, idx) => (
-                    <List key={idx}>{content}</List>
-                  ))}
-                </>
-              )}
-            </ItemWrapper>
-          ))}
-        </Wrapper>
+        <>
+          {textSpecifications.map(
+            ({ mainTitle, paragraphs, bulletPoints }, idx) => (
+              <ItemWrapper key={idx}>
+                <Title color="dark" variant="card">
+                  {mainTitle}
+                </Title>
+                <div className="pl-lg-2">
+                  {paragraphs && (
+                    <>
+                      {paragraphs.map(({ content }, idx) => (
+                        <Text key={idx}>{content}</Text>
+                      ))}
+                    </>
+                  )}
+                  {bulletPoints && (
+                    <>
+                      {bulletPoints.map(({ content }, idx) => (
+                        <List key={idx}>{content}</List>
+                      ))}
+                    </>
+                  )}
+                </div>
+              </ItemWrapper>
+            )
+          )}
+        </>
       )}
-    </>
+    </Wrapper>
   );
 };
 

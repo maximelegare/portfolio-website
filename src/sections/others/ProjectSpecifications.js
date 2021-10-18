@@ -41,9 +41,10 @@ const ProjectSpecifications = ({
   const { thumbnail, technologies, otherImages, specifications } = workItem;
   const {
     categories,
-    descriptions,
+    description,
     title,
-    textSpecifications
+    textSpecifications,
+    brand
   } = gContext.selectedProjectTraductions;
 
   console.log(gContext.selectedProjectTraductions);
@@ -106,19 +107,19 @@ const ProjectSpecifications = ({
             <Col lg="6">
               <div className="pl-lg-4">
                 <Title variant="card" className="mb-3">
-                  {descriptions.mainTitle}
+                  {description.mainTitle}
                 </Title>
                 <div className="pl-lg-2">
-                  {descriptions.items.map((description, idx) => (
+                  {description.paragraphs.map((paragraph, idx) => (
                     <Text
                       key={idx}
                       // color="dark"
-                      className={idx !== descriptions.length - 1 ? "mb-4" : ""}
+                      className={idx !== description.paragraphs.length - 1 ? "mb-4" : ""}
                       css={`
                         line-height: 1.5;
                       `}
                     >
-                      {description.content}
+                      {paragraph.content}
                     </Text>
                   ))}
                 </div>
@@ -126,32 +127,37 @@ const ProjectSpecifications = ({
             </Col>
           </Row>
         </Container>
+        <Section>
+          {/* <div className="mt-lg-3"> */}
+            <Container>
+              <Row>
+                <Col lg="4" className="mb-4 mb-lg-0">
+                  <Text variant="tag">Client</Text>
+                  <Title variant="cardBig" className="mt-3">
+                    {brand}
+                  </Title>
+                </Col>
+                <Col lg="4" className="mb-4 mb-lg-0">
+                  <Text variant="tag">Time</Text>
+                  <Title variant="cardBig" className="mt-3">
+                    Oct 15, 2019
+                  </Title>
+                </Col>
+                <Col lg="4" className="d-flex justify-content-lg-end">
+                  <Button>Live work</Button>
+                </Col>
+              </Row>
+            </Container>
+          {/* </div> */}
+        </Section>
         <Container>
-          <Specifications specifications={specifications} textSpecifications={textSpecifications}/>
+          <Specifications
+            specifications={specifications}
+            textSpecifications={textSpecifications}
+          />
         </Container>
       </Section>
 
-      <div className="mt-lg-3">
-        <Container>
-          <Row>
-            <Col lg="4" className="mb-4 mb-lg-0">
-              <Text variant="tag">Client</Text>
-              <Title variant="cardBig" className="mt-3">
-                DataTryper
-              </Title>
-            </Col>
-            <Col lg="4" className="mb-4 mb-lg-0">
-              <Text variant="tag">Time</Text>
-              <Title variant="cardBig" className="mt-3">
-                Oct 15, 2019
-              </Title>
-            </Col>
-            <Col lg="4" className="d-flex justify-content-lg-end">
-              <Button>Live work</Button>
-            </Col>
-          </Row>
-        </Container>
-      </div>
       <Section>
         <Container>
           <Masonry
