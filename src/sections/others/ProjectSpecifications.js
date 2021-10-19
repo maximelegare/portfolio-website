@@ -41,10 +41,11 @@ const ProjectSpecifications = ({
   const { thumbnail, technologies, otherImages, specifications } = workItem;
   const {
     categories,
-    description,
+    descriptions,
     title,
     textSpecifications,
-    brand
+    brand,
+    time
   } = gContext.selectedProjectTraductions;
 
   console.log(gContext.selectedProjectTraductions);
@@ -85,99 +86,85 @@ const ProjectSpecifications = ({
           </Row>
         </Container>
       </Section>
-      <Section css={{ top: 0 }}>
-        <Container>
-          <Row className="align-items-center">
-            <Col lg="6">
-              <Row className="justify-content-center text-center">
-                {/* <img
+      <Container>
+        <Row className="align-items-center">
+          <Col lg="6">
+            <Row className="justify-content-center text-center">
+              {/* <img
                   src={thumbnail}
                   alt=""
                   className="img-fluid  w-auto"
                   style={{ maxHeight: "60vh" }}
                 /> */}
-                <ImageCard
-                  alt=""
-                  thumbnail={thumbnail}
-                  className="img-fluid  w-auto"
-                  css={{ maxHeight: "70vh" }}
-                />
-              </Row>
+              <ImageCard
+                alt=""
+                thumbnail={thumbnail}
+                className="img-fluid  w-auto"
+                css={{ maxHeight: "70vh" }}
+              />
+            </Row>
+          </Col>
+
+          <Col lg="6">
+            <div className="pl-lg-4">
+              <Specifications textSpecifications={descriptions} />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+      <Section>
+        <Container>
+          <Row>
+            <Col lg="4" className="mb-4 mb-lg-0">
+              <Text variant="tag">Client</Text>
+              <Title variant="cardBig" className="mt-3">
+                {brand}
+              </Title>
             </Col>
-            <Col lg="6">
-              <div className="pl-lg-4">
-                <Title variant="card" className="mb-3">
-                  {description.mainTitle}
-                </Title>
-                <div className="pl-lg-2">
-                  {description.paragraphs.map((paragraph, idx) => (
-                    <Text
-                      key={idx}
-                      // color="dark"
-                      className={idx !== description.paragraphs.length - 1 ? "mb-4" : ""}
-                      css={`
-                        line-height: 1.5;
-                      `}
-                    >
-                      {paragraph.content}
-                    </Text>
-                  ))}
-                </div>
-              </div>
+            <Col lg="4" className="mb-4 mb-lg-0">
+              <Text variant="tag">Time</Text>
+              <Title variant="cardBig" className="mt-3">
+                {time}
+              </Title>
+            </Col>
+            <Col lg="4" className="d-flex justify-content-lg-end">
+              <Button>Live work</Button>
             </Col>
           </Row>
         </Container>
+      </Section>
+      {(specifications || textSpecifications) && (
         <Section>
-          {/* <div className="mt-lg-3"> */}
-            <Container>
-              <Row>
-                <Col lg="4" className="mb-4 mb-lg-0">
-                  <Text variant="tag">Client</Text>
-                  <Title variant="cardBig" className="mt-3">
-                    {brand}
-                  </Title>
-                </Col>
-                <Col lg="4" className="mb-4 mb-lg-0">
-                  <Text variant="tag">Time</Text>
-                  <Title variant="cardBig" className="mt-3">
-                    Oct 15, 2019
-                  </Title>
-                </Col>
-                <Col lg="4" className="d-flex justify-content-lg-end">
-                  <Button>Live work</Button>
-                </Col>
-              </Row>
-            </Container>
-          {/* </div> */}
+          <Container>
+            <Specifications
+              specifications={specifications}
+              textSpecifications={textSpecifications}
+            />
+          </Container>
         </Section>
-        <Container>
-          <Specifications
-            specifications={specifications}
-            textSpecifications={textSpecifications}
-          />
-        </Container>
-      </Section>
-
-      <Section>
-        <Container>
-          <Masonry
-            options={masonryOptions}
-            className={"masonry-grid row"} // default ''
-          >
-            {otherImages.map((item, index) => {
-              return (
-                <Col lg="4" md="6" sm="12" key={index} className="filtr-item">
-                  <ImageCard
-                    thumbnail={item.thumbnail}
-                    css={{ marginTop: "30px" }}
-                    className="w-100"
-                  />
-                </Col>
-              );
-            })}
-          </Masonry>
-        </Container>
-      </Section>
+      )}
+      {otherImages.length !== 0 && (
+        <Section>
+          <Container>
+            <Masonry
+              options={masonryOptions}
+              className={"masonry-grid row"} // default ''
+            >
+              {otherImages.map((item, index) => {
+                return (
+                  <Col lg="4" md="6" sm="12" key={index} className="filtr-item">
+                    <ImageCard
+                      thumbnail={item.thumbnail}
+                      css={{ marginTop: "30px" }}
+                      className="w-100"
+                    />
+                  </Col>
+                );
+              })}
+            </Masonry>
+          </Container>
+        </Section>
+      )}
     </>
   );
 };

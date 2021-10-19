@@ -46,7 +46,20 @@ const Specifications = ({ specifications, textSpecifications }) => {
                   {paragraphs && (
                     <>
                       {paragraphs.map(({ content }, idx) => (
-                        <Text key={idx}>{content}</Text>
+                        <Text
+                          key={idx}
+                          // color="dark"
+                          className={
+                            idx !== paragraphs.length - 1
+                              ? "mb-4"
+                              : ""
+                          }
+                          css={`
+                            line-height: 1.5;
+                          `}
+                        >
+                          {content}
+                        </Text>
                       ))}
                     </>
                   )}

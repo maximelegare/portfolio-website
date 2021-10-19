@@ -46,11 +46,16 @@ import styledcomponent from "../assets/my-images/svg/technologies/styledcomponen
 // import express from '../assets/my-images/svg/technologies/express.svg'
 
 
-import flavoieColors from '../assets/my-images/svg/colors/flavoie_buisness.svg'
+import flavoieColors from '../assets/my-images/svg/colors/colors-flavoie_buisness.svg'
+import timingColors from '../assets/my-images/svg/colors/colors_timing-app.svg'
 
 
 import montserrat_semiBold from '../assets/my-images/svg/typographies/montserrat_semiBold.svg'
 import montserrat_regular from '../assets/my-images/svg/typographies/montserrat_regular.svg'
+import comfortaa_regular from '../assets/my-images/svg/typographies/comfortaa_regular.svg'
+import open_sans_regular from '../assets/my-images/svg/typographies/open-sans_regular.svg'
+
+
 
 export const designWorks1 = [
   {
@@ -114,7 +119,12 @@ export const designWorks1 = [
     otherImages: [],
     thumbnail: imgT7,
     link: "/portfolio-details-2",
-    technologies: [vuejs, firebase]
+    technologies: [vuejs, firebase],
+    specifications: [
+      { title: "Montserrat Semi-Bold 400", image:comfortaa_regular, dim:true},
+      { title: "Montserrat Regular", image:open_sans_regular, dim:true},
+      { title: "Colors", image: timingColors },
+    ],
   },
   {
     id:'a7',
