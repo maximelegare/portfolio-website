@@ -66,25 +66,31 @@
   },
   "a3": {
     "brand": "Projet Personnel",
+    "time": "01 juin, 2020",
     "cardTitle": "Concept Artistique",
     "slug": "Affiche de film fictif",
-    "title": "Être une princesse, c'est épuisant!",
+    "title": "«Les gens me regarde comme si j'étais Katy Perry»",
     "descriptions": [
       {
         "mainTitle": "Affiche de film",
         "paragraphs": [
           {
             "title": "",
-            "content": "Affiche pour un film fictif nommé Princess. L'objectif était de mettre de l'ironie dans"
+            "content": "Cette œuvre n'existerait pas si ce n'était de cette citation plutôt rigolotte mentionnée par un membre de ma famille: «Les gens me regarde comme si j'étais Katy Perry»."
           },
           {
             "title": "",
-            "content": "Combinant React et Redux pour le front-end, le site web a une structure propice à l'expansion. La réutilisation de composantes ainsi que l'utilisation de Higher Order Components (HOC) sont des concepts importants qui ont été pris en compte dès le début de la conception"
+            "content": "L'objectif était de créer une oeuvre graphique en y incluant cette citation. Tout ce qui inclus la scène, les fans ainsi que les couleurs éclatantes se réfère directement à Katy Perry ainsi que ses concerts. Par contre, la silhouette sur le dessus de la snène ne pouvait pas être une chanteuse. C'est là que le concept de « Princess » entre en jeu."
           },
           {
             "title": "",
-            "content": "La gestion d'utilisateurs ainsi que le stockage des données se fait entièrement à l'aide de Firebase. En ce qui concerne les transactions, Stripe s'occupe de pratiquement tout."
+            "content": "Quant au concept de princesse, il se réfère à l'image dégagé par la dîte citation. C'est également pour cette raison que l'oeuvre est une affiche de film et non pas une simple oeuvre graphique."
+          },
+          {
+            "title": "",
+            "content": "À la place d'une silhouette de chanteuse, une silouhette de princesse "
           }
+          
         ]
       }
     ],
@@ -98,10 +104,30 @@
     "categories": ["Developpement web"]
   },
   "a5": {
-    "brand": "",
-    "cardTitle": "",
+    "brand": "France Lavoie, styliste",
+    "time": "27 Mars, 2020",
+    "cardTitle": "France Lavoie, styliste",
     "slug": "Website with payments",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "Une passionnée de mode devant la camera",
+    "descriptions": [
+      {
+        "mainTitle": "",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Cette photographie a été prise dans le cadre d'un photoshoot pour Mme France Lavoie, styliste et designer à son compte."
+          },
+          {
+            "title": "",
+            "content": "Considerant sa profession, un accessoire en lien avec la mode était absolument nécessaire afin de personnaliser d'avantages la photographie, d'où le sac de magasinage."
+          },
+          {
+            "title": "",
+            "content": "Le noir en arrière plan centre l'attention sur le sujet en plus d'ajouter une certaine élégance à la photo."
+          }
+        ]
+      }
+    ],
     "categories": ["Photographie"]
   },
   "a6": {
@@ -132,7 +158,7 @@
   },
   "a7": {
     "brand": "Projet personnel",
-    "time":"26 Juil, 2020",
+    "time": "26 Juil, 2020",
     "cardTitle": "Concept Artistique",
     "slug": "",
     "title": "Projet inspiré de American Horror Story",
@@ -144,15 +170,15 @@
             "title": "",
             "content": "L'objectif de ce projet était de réaliser une œuvre artistique mélangeant deux de mes plus grandes passions: l'horreur ainsi que la musique."
           },
-         
+
           {
             "title": "",
             "content": "Considérant que la musique elle-même n'est pas visible à l’œil nu, sa représentation visuelle devait absolument se faire à l'aide d'un accessoire musical quelconque (partition musicale, instrument de musique, etc.). Le tout devait se faire dans l'originalité bien-entendu."
-          }, 
+          },
           {
             "title": "",
             "content": "Afin de maximiser l'effet d'horreur, l’intégration d'un être humain était nécessaire, ajoutant ainsi par le fait même une touche d'inconfort à l’œuvre."
-          }, 
+          },
           {
             "title": "",
             "content": "Les affiches publicitaires de La série télévisée American Horror Story (AHS) ont été une grande source d'inspiration tout au long de la réalisation du projet."
@@ -164,7 +190,7 @@
   },
   "a8": {
     "brand": "Projet personel",
-    "time":"20 Jan, 2021",
+    "time": "20 Jan, 2021",
     "cardTitle": "Concept Artistique",
     "slug": "Website with payments",
     "title": "Photographie d'horreur faite différement",
@@ -194,6 +220,25 @@
     "cardTitle": "Find a Coach app",
     "slug": "",
     "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "descriptions": [
+      {
+        "mainTitle": "À propos du site",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "L'application web «Find a Coach» est la première "
+          },
+          {
+            "title": "",
+            "content": "L'utilisateur peut ajouter autant de chronomètres qu'il le souhaite et les démarrer individuellement au moment voulu. Une section  «To-dos» a également été ajouté afin d'enrichir l'expérience."
+          },
+          {
+            "title": "",
+            "content": "Le Front-end est principalement réalisé à l'aide de Vue.js ainsi que Vuex pour le State. Firebase s'occupe de la gestion d'utilisateurs ainsi que le stockage de données."
+          }
+        ]
+      }
+    ],
     "categories": ["Developpement"]
   },
   "a10": {
@@ -211,14 +256,33 @@
     "categories": ["Graphisme"]
   },
   "a12": {
-    "brand": "Photographie de mode",
+    "brand": "France Lavoie, styliste",
     "cardTitle": "Photographie de mode",
     "slug": "Website with payments",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "Un Photoshoot de style Rebel",
+    "descriptions": [
+      {
+        "mainTitle": "Le photoshoot",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Un style Rebel, néanmoins élégant, était recherché lors de la réalisation de ce photoshoot. C'est d'ailleurs ce qui a influencé la coupe de cheveux non conventionnelle de la mannequin."
+          },
+          {
+            "title": "",
+            "content": "L'agencement des accessoires "
+          },
+          {
+            "title": "",
+            "content": "Quant au fond, sa couleur bleuté vient complémenter les touches de orange dispercées un peu partout sur la mannequin."
+          }
+        ]
+      }
+    ],
     "categories": ["Photographie"]
   },
   "a13": {
-    "brand": "Photographie de mode",
+    "brand": "France Lavoie, styliste",
     "cardTitle": "Photographie de mode",
     "slug": "Website with payments",
     "title": "Adaptable but Identifiable Product for Kandinsky.",
@@ -229,6 +293,25 @@
     "cardTitle": "Photographie de mode",
     "slug": "Website with payments",
     "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "descriptions": [
+      {
+        "mainTitle": "Le photoshoot",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "L'objectif de cette photographie est de mettre en valeur le manteau de bande dessinée."
+          },
+          {
+            "title": "",
+            "content": "Les accessoires couleur sarcelle accentuent"
+          },
+          {
+            "title": "",
+            "content": "L'arrière plan de la photographie à une teinte légèrement bleuté, accentuant ainsi l'effet de froideur. Par contraste, l'endoit où la mannequin est assise à une teinte beaucoup plus chaude, lui mettant ainsi de l'importance."
+          }
+        ]
+      }
+    ],
     "categories": ["Photographie"]
   }
 }
