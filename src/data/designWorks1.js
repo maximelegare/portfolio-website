@@ -77,6 +77,10 @@ export const designWorks1 = [
     thumbnail: imgT5,
     otherImages: [],
     link: "/portfolio-details-2",
+    links:{
+      github:"https://github.com/maximelegare/bikanky-mtl",
+      liveWebsite:"https://bikanky-montreal.web.app/"
+    },
     technologies: [
       react,
       redux,
@@ -117,6 +121,10 @@ export const designWorks1 = [
     id:'a6',
     categories: [`developpement web`, `graphisme`],
     otherImages: [],
+    links:{
+      github:"https://github.com/maximelegare/timing-app",
+      liveWebsite:"https://timing-app-7c35b.web.app/timers"
+    },
     thumbnail: imgT7,
     link: "/portfolio-details-2",
     technologies: [vuejs, firebase],
@@ -148,12 +156,20 @@ export const designWorks1 = [
     thumbnail: imgT9,
     otherImages: [],
     link: "/portfolio-details-2",
+    links:{
+      github:"https://github.com/maximelegare/coach_app",
+      liveWebsite:""
+    },
     technologies: [vuejs, firebase]
   },
   {
     id:'a10',
     categories: [`developpement web`],
     thumbnail: imgT10,
+    links:{
+      github:"https://github.com/maximelegare/crwn-clothing-react",
+      liveWebsite:"https://crwn-shop-904f9.web.app/"
+    },
     otherImages: [],
     link: "/portfolio-details-2",
     technologies: [react, redux, stripe, firebase, sass]

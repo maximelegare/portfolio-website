@@ -25,8 +25,9 @@
   "a2": {
     "brand": "Bikanky montréal",
     "cardTitle": "Bikanky montréal",
+    "time":"",
     "slug": "creation-de-vêtements",
-    "title": "Un site web transactionnel, de A à Z, sort of",
+    "title": "",
     "descriptions": [
       {
         "mainTitle": "À propos du site",
@@ -72,25 +73,20 @@
     "title": "«Les gens me regarde comme si j'étais Katy Perry»",
     "descriptions": [
       {
-        "mainTitle": "Affiche de film",
+        "mainTitle": "Quelle drôle de blague",
         "paragraphs": [
           {
             "title": "",
-            "content": "Cette œuvre n'existerait pas si ce n'était de cette citation plutôt rigolotte mentionnée par un membre de ma famille: «Les gens me regarde comme si j'étais Katy Perry»."
+            "content": "Cette œuvre a été réalisé à titre de blague, pour une amie, lorsqu'elle a mentionné la citation suivante: «Les gens me regarde comme si j'étais Katy Perry»."
           },
           {
             "title": "",
-            "content": "L'objectif était de créer une oeuvre graphique en y incluant cette citation. Tout ce qui inclus la scène, les fans ainsi que les couleurs éclatantes se réfère directement à Katy Perry ainsi que ses concerts. Par contre, la silhouette sur le dessus de la snène ne pouvait pas être une chanteuse. C'est là que le concept de « Princess » entre en jeu."
+            "content": "Tout ce qui inclus la scène, les fans ainsi que les couleurs éclatantes se réfère directement à la chanteuse Katy Perry. Par contre, la chanteuse internationale ne pouvait évidemment pas se trouver sur le dessus de la scène. Par conséquent, une sillouhette de princesse s'y retrouve, reflétant ainsi d'avantages la personnalité de citation."
           },
           {
             "title": "",
-            "content": "Quant au concept de princesse, il se réfère à l'image dégagé par la dîte citation. C'est également pour cette raison que l'oeuvre est une affiche de film et non pas une simple oeuvre graphique."
-          },
-          {
-            "title": "",
-            "content": "À la place d'une silhouette de chanteuse, une silouhette de princesse "
+            "content": "Afin de solidifier le lien entre Katy Perry et la princesse, l’œuvre à été converti en affiche de film, permettant ainsi d'ajouter du texte supplémentaire ce qui procure un meilleur contexte."
           }
-          
         ]
       }
     ],
@@ -131,8 +127,9 @@
     "categories": ["Photographie"]
   },
   "a6": {
-    "brand": "Timing-app",
+    "brand": "Projet personnel",
     "cardTitle": "Timing-app",
+    "time":"6 avr, 2021",
     "slug": "",
     "title": "Une To-do app fancy.",
     "descriptions": [
@@ -226,7 +223,30 @@
         "paragraphs": [
           {
             "title": "",
-            "content": "L'application web «Find a Coach» est la première "
+            "content": "Cette Application m'a fait office d'introdution à Vue.js"
+          },
+          {
+            "title": "",
+            "content": "Le Front-end est réalisé à l'aide de Vue.js ainsi que Vuex pour le State. Firebase s'occupe de la gestion d'utilisateurs ainsi que le stockage de données."
+          }
+        ]
+      }
+    ],
+    "categories": ["Developpement"]
+  },
+  "a10": {
+    "brand": "Crown-shop",
+    "cardTitle": "Crown-shop",
+    "time":"04 Juin, 2021",
+    "slug": "Website with payments",
+    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "descriptions": [
+      {
+        "mainTitle": "À propos du site",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "oeuvres graphiques visant à imprimées sur des chaindails."
           },
           {
             "title": "",
@@ -239,20 +259,25 @@
         ]
       }
     ],
-    "categories": ["Developpement"]
-  },
-  "a10": {
-    "brand": "Crown-shop",
-    "cardTitle": "Crown-shop",
-    "slug": "Website with payments",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
     "categories": ["Developpement web"]
   },
   "a11": {
-    "brand": "Designs de Chandails",
+    "brand": "Projet personnel",
     "cardTitle": "Designs de Chandails",
+    "time":"04 mai, 2020",
     "slug": "Website with payments",
     "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "descriptions": [
+      {
+        "mainTitle": "À propos du site",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Œuvres humoristiques visant à imprimées sur des chandails."
+          }
+        ]
+      }
+    ],
     "categories": ["Graphisme"]
   },
   "a12": {

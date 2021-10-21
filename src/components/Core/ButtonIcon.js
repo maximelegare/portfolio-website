@@ -8,17 +8,11 @@ const ButtonIcon = ({
   ...rest
 }) => {
   return (
-    <Button variant={variant} color={color} {...rest}>
-      <Box
-        css={`
-          font-size: 1.1875rem;
-          padding-right: 1.25rem;
-          display: flex;
-        `}
-      >
-        <i className="icon icon-chat-round-2" />
-      </Box>
-      {children}
+    <Button variant={variant} color={color} {...rest} css={{margin:"0px 5px", height:"20px"}}>
+    
+     
+        {children}
+      
     </Button>
   );
 };

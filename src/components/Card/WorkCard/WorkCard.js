@@ -82,7 +82,7 @@ const WorkCard = ({ workItem, link, ...rest }) => {
         {workItem.technologies
           .filter((_, index) => index < 3)
           .map(icon => (
-            <IconTechnology key={icon} icon={icon} small />
+            <IconTechnology key={icon} icon={icon} variant="small" />
           ))}
         {workItem.technologies.length > 3 ? (
           <Text style={{ display: "inline" }}>...</Text>

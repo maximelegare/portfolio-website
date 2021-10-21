@@ -10,12 +10,12 @@ import Masonry from "react-masonry-component";
 import { Box } from "../../components/Core";
 
 import IconTechnology from "../../components/IconTechnology";
-import { Button } from "react-bootstrap";
 
-import { Section, Title, Text, Span } from "../../components/Core";
+import { Section, Title, Text } from "../../components/Core";
 // import imgPhoto from "../../assets/image/jpg/portfolio-about.jpg";
-import imgSignLight from "../../assets/image/png/signature.png";
 import ImageCard from "../../components/Card/ImageCard";
+
+import ProjectClientAndDateAndLinks from "../../components/ProjectClientAndDateAndLinks";
 
 const LinkSocial = styled.a`
   color: ${({ theme }) => theme.colors.dark} !important;
@@ -38,7 +38,13 @@ const ProjectSpecifications = ({
 }) => {
   const gContext = useContext(GlobalContext);
 
-  const { thumbnail, technologies, otherImages, specifications } = workItem;
+  const {
+    thumbnail,
+    technologies,
+    otherImages,
+    specifications,
+    links
+  } = workItem;
   const {
     categories,
     descriptions,
@@ -112,27 +118,9 @@ const ProjectSpecifications = ({
           </Col>
         </Row>
       </Container>
-      <Section>
-        <Container>
-          <Row>
-            <Col lg="4" className="mb-4 mb-lg-0">
-              <Text variant="tag">Client</Text>
-              <Title variant="cardBig" className="mt-3">
-                {brand}
-              </Title>
-            </Col>
-            <Col lg="4" className="mb-4 mb-lg-0">
-              <Text variant="tag">Time</Text>
-              <Title variant="cardBig" className="mt-3">
-                {time}
-              </Title>
-            </Col>
-            <Col lg="4" className="d-flex justify-content-lg-end">
-              <Button>Live work</Button>
-            </Col>
-          </Row>
-        </Container>
-      </Section>
+
+      <ProjectClientAndDateAndLinks brand={brand} time={time} links={links} />
+
       {(specifications || textSpecifications) && (
         <Section>
           <Container>
