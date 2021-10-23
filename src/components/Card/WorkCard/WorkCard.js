@@ -84,7 +84,7 @@ const WorkCard = ({ workItem, link, ...rest }) => {
           .map(icon => (
             <IconTechnology key={icon} icon={icon} variant="small" />
           ))}
-        {workItem.technologies.length > 3 ? (
+        {workItem?.technologies.length > 3 ? (
           <Text style={{ display: "inline" }}>...</Text>
         ) : (
           ""

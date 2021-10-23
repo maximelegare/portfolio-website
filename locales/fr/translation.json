@@ -12,7 +12,11 @@
           },
           {
             "title": "",
-            "content": "J'ai un background en design, ce qui me permet d'être plus critique lors de la conception d'interfaces utilisateurs."
+            "content": "Grâce à mon background en Design, je suis dôté d'un oeil très critique lors de la conception d'interfaces utilisateurs."
+          },
+          {
+            "title": "",
+            "content": "En plus d'être mordu de programmation, je suis un musicien dans l'âme et un fanatique d'horreur."
           }
         ]
       }
@@ -129,15 +133,15 @@
         "paragraphs": [
           {
             "title": "",
-            "content": "Cette photographie a été prise dans le cadre d'un photoshoot pour Mme France Lavoie, styliste et designer à son compte."
+            "content": "Cette photographie a été prise dans le cadre d'un photoshoot avec la styliste et designer Mme France Lavoie."
           },
           {
             "title": "",
-            "content": "Considerant sa profession, un accessoire en lien avec la mode était absolument nécessaire afin de personnaliser d'avantages la photographie, d'où le sac de magasinage."
+            "content": "Vûe sa profession, un accessoire directement lié à la mode était absolument nécessaire afin de personnaliser d'avantages la photographie, d'où le sac de magasinage."
           },
           {
             "title": "",
-            "content": "Le noir en arrière plan centre l'attention sur le sujet en plus d'ajouter une certaine élégance à la photo."
+            "content": "Quant au fond noir, il attire l'attention sur le sujet en plus d'ajouter une certaine élégance à la photographie."
           }
         ]
       }
@@ -156,15 +160,15 @@
         "paragraphs": [
           {
             "title": "",
-            "content": "L'objectif derrière Timing était de réaliser une application permettant à son utilisateur de mieux structurer son temps."
+            "content": "L'objectif derrière Timing était de réaliser une application permettant aux utilisateurs de mieux structurer leur temps."
           },
           {
             "title": "",
-            "content": "L'utilisateur peut ajouter autant de chronomètres qu'il le souhaite et les démarrer individuellement au moment voulu. Une section  «To-dos» a également été ajouté afin d'enrichir l'expérience."
+            "content": "Chaque utilisateur peut ajouter autant de chronomètres qu'il le souhaite et les démarrer individuellement au moment voulu. Une section  «To-do» a également été ajouté afin d'enrichir l'expérience."
           },
           {
             "title": "",
-            "content": "Le Front-end est principalement réalisé à l'aide de Vue.js ainsi que Vuex pour le State. Firebase s'occupe de la gestion d'utilisateurs ainsi que le stockage de données."
+            "content": "Le «front-end» est principalement réalisé à l'aide de Vue.js ainsi que Vuex pour gérer le State plus facilement. Vue Router est également utilisé pour la gestion des différentes pages. Quant au «backend», Firebase s'occupe de la gestion d'utilisateurs ainsi que du stockage de données."
           }
         ]
       }
@@ -215,16 +219,13 @@
         "paragraphs": [
           {
             "title": "",
-            "content": "Becky, la poupée de gauche, a été réalisé au cours du tournage d'un film d'horreur puisqu'une poupée horrifante y était requise. Quant à Salomé, sa réalisation a eu lieu quelques mois plus tards à temps perdu."
+            "content": "Becky, la poupée de gauche, a été réalisé au cours du tournage d'un film d'horreur puisqu'une poupée horrifante y était requise rapidement. Quant à Salomé, sa réalisation a eu lieu quelques mois plus tards à temps perdu."
           },
           {
             "title": "",
             "content": "Afin de leur rendre justice, leur photographie devait sortir de l'ordinaire. En appliquant une couleur éclatante en arrière plan, le contexte devient soudainement très enfantin. "
-          },
-          {
-            "title": "",
-            "content": ""
           }
+          
         ]
       }
     ],
@@ -287,7 +288,7 @@
     "title": "Adaptable but Identifiable Product for Kandinsky.",
     "descriptions": [
       {
-        "mainTitle": "À propos du site",
+        "mainTitle": "",
         "paragraphs": [
           {
             "title": "",

@@ -5,6 +5,7 @@
     "cardTitle": "Buisness Card Design",
     "slug": "",
     "title": "A stylish Buisness Card for a Stylist",
+    
     "categories": ["graphism"]
   },
   "a2": {
@@ -12,6 +13,25 @@
     "cardTitle": "Bikanky montreal web-app",
     "slug": "",
     "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "descriptions": [
+      {
+        "mainTitle": "À propos du site",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Bikanky Montreal is a freelance company that needed a transactional website for the sale of clothing."
+          },
+          {
+            "title": "",
+            "content": "Combining React and Redux for the front-end, the website has a structure conducive to expansion. The reuse of components as well as the use of Higher Order Components (HOC) are important concepts that were taken into account from the beginning of the conception."
+          },
+          {
+            "title": "",
+            "content": "User management and data storage is done entirely with Firebase. As far as transactions are concerned, Stripe takes care of almost everything."
+          }
+        ]
+      }
+    ],
     "categories": ["web development"]
   },
   "a3": {
@@ -19,7 +39,26 @@
     "cardTitle": "Artistic concept",
     "slug": "",
     "title": "Being a Princess, it's exhausting!",
-    "categories": ["web development"]
+    "descriptions": [
+      {
+        "mainTitle": "What a funny joke!",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "This piece was made for a friend as a joke when she said the following quote: “People look at me as if I were Katy Perry”."
+          },
+          {
+            "title": "",
+            "content": "Everything that includes the stage, the fans and the bright colors refers directly to the singer Katy Perry. However, the international singer could not be on top of the stage. Therefore, a princess's figure was placed there to better fit the quote's personality."
+          },
+          {
+            "title": "",
+            "content": "In order to solidify the connection between Katy Perry and the princess, the artwork has been converted into a movie poster, allowing for additional text to be added which provides a better context."
+          }
+        ]
+      }
+    ],
+    "categories": ["graphism"]
   },
   "a4": {
     "brand": "Ui-Design Website",
@@ -32,14 +71,52 @@
     "brand": "",
     "cardTitle": "",
     "slug": "Website with payments",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
-    "categories": ["web development"]
+    "title": "A fashion enthusiast in front of the camera",
+    "descriptions": [
+      {
+        "mainTitle": "",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "This picture was taken during a photoshoot featuring the stylist and designer Ms. France Lavoie."
+          },
+          {
+            "title": "",
+            "content": "Due to her profession, a fashion accessory was a must to personalize the photograph, hence the shopping bag."
+          },
+          {
+            "title": "",
+            "content": "The black background draws attention to the subject and adds a certain elegance to the photograph."
+          }
+        ]
+      }
+    ],
+    "categories": ["photography"]
   },
   "a6": {
     "brand": "Timing web-app",
     "cardTitle": "Timing web-app",
     "slug": "Website with payments",
     "title": "A fancy To do list",
+    "descriptions": [
+      {
+        "mainTitle": "À propos du site",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "The goal behind Timing was to create a web app allowing its users to better structure their time"
+          },
+          {
+            "title": "",
+            "content": "Each user can add as many stopwatches as he wants and start them individually at the desired time. A “To-do” section has also been added to enheance the user experience."
+          },
+          {
+            "title": "",
+            "content": "The front-end is made with Vue.js and Vuex to manage the state more efficiently. It aslo uses Vue Router to render the different pages. As for the Backend, Firebase takes care of user management and data storage."
+          }
+        ]
+      }
+    ],
     "categories": ["web development"]
   },
   "a7": {
@@ -47,13 +124,53 @@
     "cardTitle": "Artistic Horror Concept",
     "slug": "Website with payments",
     "title": "American Horror Story inspired project",
-    "categories": ["web development"]
+    "descriptions": [
+      {
+        "mainTitle": "Fed by Music",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "The goal of this project was to create an artistic piece mixing two of my greatest passions: horror and music."
+          },
+
+          {
+            "title": "",
+            "content": "Considering that music itself isn't visible to the naked eye, its visual representation had to be done with the help of a musical accessory (musical score, musical instrument, etc.). The whole thing had to be done in an original way of course."
+          },
+          {
+            "title": "",
+            "content": "In order to maximize the horror effect, the integration of a human being was necessary, thus adding a touch of discomfort to the artwork."
+          },
+          {
+            "title": "",
+            "content": "The American Horror Story (AHS) TV show posters were a great source of inspiration throughout the whole project."
+          }
+        ]
+      }
+    ],
+    "categories": ["photography"]
   },
   "a8": {
     "brand": "Horror Photography",
-    "cardTitle": "Horror Photography",
+    "cardTitle": "Artistic Concept",
     "slug": "Website with payments",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "Horror photography made differently",
+    "descriptions": [
+      {
+        "mainTitle": "Becky & Salomé",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Becky, the doll on the left, was made during the shooting of a horror movie since a horrifying doll was required shortly. As for Salome, her creation took place in the fallowing months as a hobby."
+          },
+          {
+            "title": "",
+            "content": "Afin de leur rendre justice, leur photographie devait sortir de l'ordinaire. En appliquant une couleur éclatante en arrière plan, le contexte devient soudainement très enfantin."
+          }
+          
+        ]
+      }
+    ],
     "categories": ["web development"]
   },
   "a9": {

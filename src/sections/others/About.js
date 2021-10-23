@@ -10,6 +10,9 @@ import GlobalContext from "../../context/GlobalContext";
 import { Section, Title, Text, Span } from "../../components/Core";
 import imgPhoto from "../../assets/image/jpg/portfolio-about.jpg";
 import imgSignLight from "../../assets/image/png/signature.png";
+import ListOfLinks from "../../components/ListOfLinks/ListOfLinks";
+
+import { aboutData } from "../../data/designWorks1";
 
 const LinkSocial = styled.a`
   color: ${({ theme }) => theme.colors.light} !important;
@@ -28,6 +31,7 @@ const About = ({ hero = true, bg = "dark",  ...rest }) => {
 
   const gContext = useContext(GlobalContext)
   const {mainTitle, descriptions} = gContext.aboutModalTraductions
+  
 
   return (
     <>
@@ -46,60 +50,21 @@ const About = ({ hero = true, bg = "dark",  ...rest }) => {
                 </Title>
                 <Specifications textSpecifications={descriptions}/>
                 <div className="mt-4">
-                  <Text color="light">Email me at</Text>
+                  <Text color="dark">Email me at</Text>
 
                   <Text variant="p">
                     <a
-                      href="mailto:hello@folio.com"
+                      href="mailto:mleg1234@protonmail.com"
                       className="font-weight-bold"
                     >
-                      <Span color="dark">hello@folio.com</Span>
+                      <Span color="dark">mleg1234@protonmail.com</Span>
                     </a>
                   </Text>
                 </div>
-                <div className="mt-5">
-                  <img src={imgSignLight} alt="sign" className="img-fluid" />
-                </div>
-                <Text color="light" className="mt-3 font-weight-bold">
+                <Text color="dark" className="mt-3 font-weight-bold">
                   Bruce Ryan
                 </Text>
-                <Text color="light" variant="small">
-                  Founder of Folio Digital
-                </Text>
-                <div className="mt-5 d-flex">
-                  <LinkSocial
-                    href="https://www.dribbble.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-3"
-                  >
-                    Dribble
-                  </LinkSocial>
-                  <LinkSocial
-                    href="https://www.twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className=" mr-3"
-                  >
-                    Twitter
-                  </LinkSocial>
-                  <LinkSocial
-                    href="https://www.facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-3"
-                  >
-                    Facebook
-                  </LinkSocial>
-                  <LinkSocial
-                    href="https://www.instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-weight-bold"
-                  >
-                    Instagram
-                  </LinkSocial>
-                </div>
+                <ListOfLinks links={aboutData.links} className="mt-3"/>
               </div>
             </Col>
           </Row>

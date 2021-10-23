@@ -45,42 +45,71 @@ import materialui from "../assets/my-images/svg/technologies/materialui.svg";
 import styledcomponent from "../assets/my-images/svg/technologies/styledcomponent.svg";
 // import express from '../assets/my-images/svg/technologies/express.svg'
 
+import flavoieColors from "../assets/my-images/svg/colors/colors-flavoie_buisness.svg";
+import timingColors from "../assets/my-images/svg/colors/colors_timing-app.svg";
 
-import flavoieColors from '../assets/my-images/svg/colors/colors-flavoie_buisness.svg'
-import timingColors from '../assets/my-images/svg/colors/colors_timing-app.svg'
+import montserrat_semiBold from "../assets/my-images/svg/typographies/montserrat_semiBold.svg";
+import montserrat_regular from "../assets/my-images/svg/typographies/montserrat_regular.svg";
+import comfortaa_regular from "../assets/my-images/svg/typographies/comfortaa_regular.svg";
+import open_sans_regular from "../assets/my-images/svg/typographies/open-sans_regular.svg";
+
+import githubWhite from "../assets/my-images/svg/technologies/githubWhite.svg";
+import globeWhite2 from '../assets/my-images/svg/globeWhite2.svg'
+import linkedin from '../assets/my-images/svg/linkedin.svg'
+import instagram from '../assets/my-images/svg/instagram.svg'
 
 
-import montserrat_semiBold from '../assets/my-images/svg/typographies/montserrat_semiBold.svg'
-import montserrat_regular from '../assets/my-images/svg/typographies/montserrat_regular.svg'
-import comfortaa_regular from '../assets/my-images/svg/typographies/comfortaa_regular.svg'
-import open_sans_regular from '../assets/my-images/svg/typographies/open-sans_regular.svg'
-
-
+export const aboutData = {
+  links:[
+    {
+      link: "https://github.com/maximelegare",
+      icon: githubWhite
+    },
+    {
+      link: "https://urlgeni.us/linkedin/t5QR",
+      icon: linkedin
+    }
+  ]
+}
 
 export const designWorks1 = [
   {
-    id:'a1',
+    id: "a1",
     categories: [`graphisme`],
     thumbnail: imgT4,
     otherImages: [],
     link: "/portfolio-details-2",
     technologies: [illustrator, photoshop, photography],
     specifications: [
-      { title: "Montserrat Semi-Bold 400", image:montserrat_semiBold, dim:true},
-      { title: "Montserrat Regular", image:montserrat_regular},
-      { title: "Colors", image: flavoieColors },
-    ],
+      {
+        title: "Montserrat Semi-Bold 400",
+        image: montserrat_semiBold,
+        dim: true
+      },
+      { title: "Montserrat Regular", image: montserrat_regular },
+      { title: "Colors", image: flavoieColors }
+    ]
   },
   {
-    id:'a2',
+    id: "a2",
     categories: [`developpement web`, `photographie`, `graphisme`],
     thumbnail: imgT5,
     otherImages: [],
     link: "/portfolio-details-2",
-    links:{
-      github:"https://github.com/maximelegare/bikanky-mtl",
-      liveWebsite:"https://bikanky-montreal.web.app/"
+    links: {
+      github: "https://github.com/maximelegare/bikanky-mtl",
+      liveWebsite: "https://bikanky-montreal.web.app/"
     },
+    links: [
+      {
+        link: "https://github.com/maximelegare/timing-app",
+        icon: githubWhite
+      },
+      {
+        link: "https://timing-app-7c35b.web.app/timers",
+        icon: globeWhite2
+      }
+    ],
     technologies: [
       react,
       redux,
@@ -94,7 +123,7 @@ export const designWorks1 = [
     ]
   },
   {
-    id:'a3',
+    id: "a3",
     categories: [`graphisme`],
     thumbnail: imgT2,
     otherImages: [],
@@ -102,7 +131,7 @@ export const designWorks1 = [
     technologies: [illustrator]
   },
   {
-    id:'a4',
+    id: "a4",
     categories: [`graphisme`, `photographie`],
     thumbnail: imgT6,
     otherImages: [],
@@ -110,7 +139,7 @@ export const designWorks1 = [
     technologies: [illustrator, photoshop, photography]
   },
   {
-    id:'a5',
+    id: "a5",
     categories: [`photographie`],
     thumbnail: imgT1,
     otherImages: [],
@@ -118,24 +147,34 @@ export const designWorks1 = [
     technologies: [photoshop, photography]
   },
   {
-    id:'a6',
+    id: "a6",
     categories: [`developpement web`, `graphisme`],
     otherImages: [],
-    links:{
-      github:"https://github.com/maximelegare/timing-app",
-      liveWebsite:"https://timing-app-7c35b.web.app/timers"
-    },
+    links: [
+      {
+        link: "https://github.com/maximelegare/timing-app",
+        icon: githubWhite
+      },
+      {
+        link: "https://timing-app-7c35b.web.app/timers",
+        icon: globeWhite2
+      }
+    ],
     thumbnail: imgT7,
     link: "/portfolio-details-2",
     technologies: [vuejs, firebase],
     specifications: [
-      { title: "Montserrat Semi-Bold 400", image:comfortaa_regular, dim:true},
-      { title: "Montserrat Regular", image:open_sans_regular, dim:true},
-      { title: "Colors", image: timingColors },
-    ],
+      {
+        title: "Montserrat Semi-Bold 400",
+        image: comfortaa_regular,
+        dim: true
+      },
+      { title: "Montserrat Regular", image: open_sans_regular, dim: true },
+      { title: "Colors", image: timingColors }
+    ]
   },
   {
-    id:'a7',
+    id: "a7",
     categories: [`photographie`],
     thumbnail: imgT3,
     otherImages: [],
@@ -143,7 +182,7 @@ export const designWorks1 = [
     technologies: [photoshop, photography]
   },
   {
-    id:'a8',
+    id: "a8",
     categories: [`photographie`],
     thumbnail: imgT8,
     otherImages: [],
@@ -151,31 +190,43 @@ export const designWorks1 = [
     technologies: [photoshop, photography]
   },
   {
-    id:'a9',
+    id: "a9",
     categories: [`developpement web`],
     thumbnail: imgT9,
     otherImages: [],
     link: "/portfolio-details-2",
-    links:{
-      github:"https://github.com/maximelegare/coach_app",
-      liveWebsite:""
-    },
+    links: [
+      {
+        link: "https://github.com/maximelegare/coach_app",
+        icon: githubWhite
+      },
+      {
+        link: "https://find-a-coach-71353.web.app/coaches",
+        icon: globeWhite2
+      }
+    ],
     technologies: [vuejs, firebase]
   },
   {
-    id:'a10',
+    id: "a10",
     categories: [`developpement web`],
     thumbnail: imgT10,
-    links:{
-      github:"https://github.com/maximelegare/crwn-clothing-react",
-      liveWebsite:"https://crwn-shop-904f9.web.app/"
-    },
+    links: [
+      {
+        link: "https://github.com/maximelegare/crwn-clothing-react",
+        icon: githubWhite
+      },
+      {
+        link: "https://crwn-shop-904f9.web.app/",
+        icon: globeWhite2
+      }
+    ],
     otherImages: [],
     link: "/portfolio-details-2",
     technologies: [react, redux, stripe, firebase, sass]
   },
   {
-    id:'a11',
+    id: "a11",
     categories: [`graphisme`],
     thumbnail: imgT11,
     otherImages: [],
@@ -195,7 +246,7 @@ export const designWorks1 = [
   //   technologies: [photoshop, photography]
   // },
   {
-    id:'a12',
+    id: "a12",
     categories: [`photographie`],
     thumbnail: imgT13,
     otherImages: [
@@ -208,7 +259,7 @@ export const designWorks1 = [
     technologies: [photoshop, photography]
   },
   {
-    id:'a13',
+    id: "a13",
     brand: `Stylisme Danielle`,
     slug: `stylisme`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,
@@ -226,7 +277,7 @@ export const designWorks1 = [
     technologies: [photoshop, photography]
   },
   {
-    id:'a14',
+    id: "a14",
     brand: `Stylisme Danielle`,
     slug: `stylisme`,
     title: `Adaptable but Identifiable Product for Kandinsky.`,

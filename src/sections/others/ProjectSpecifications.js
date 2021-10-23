@@ -15,7 +15,7 @@ import { Section, Title, Text } from "../../components/Core";
 // import imgPhoto from "../../assets/image/jpg/portfolio-about.jpg";
 import ImageCard from "../../components/Card/ImageCard";
 
-import ProjectClientAndDateAndLinks from "../../components/ProjectClientAndDateAndLinks";
+import ListOfLinks from "../../components/ListOfLinks/ListOfLinks";
 
 const LinkSocial = styled.a`
   color: ${({ theme }) => theme.colors.dark} !important;
@@ -119,7 +119,7 @@ const ProjectSpecifications = ({
         </Row>
       </Container>
 
-      <ProjectClientAndDateAndLinks brand={brand} time={time} links={links} />
+      <ListOfLinks links={links} right section/>
 
       {(specifications || textSpecifications) && (
         <Section>
