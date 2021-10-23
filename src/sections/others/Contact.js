@@ -24,10 +24,10 @@ const Contact = ({ hero = true, bg = "dark", ...rest }) => {
           <Row className="justify-content-center">
             <Col lg="6">
               <Box className="pr-lg-5">
-                <Title color="light" variant="secSm" mb="2rem">
+                <Title color="dark" variant="secSm" mb="2rem">
                   Contact now
                 </Title>
-                <Text color="light" mb="2.75rem">
+                <Text color="dark" mb="2.75rem">
                   Have a project or question? Send me a message. I will reply
                   within 48 hours.
                 </Text>

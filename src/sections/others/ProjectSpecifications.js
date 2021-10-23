@@ -113,7 +113,7 @@ const ProjectSpecifications = ({
 
           <Col lg="6">
             <div className="pl-lg-4">
-              <Specifications textSpecifications={descriptions} />
+              <Specifications marginLeft textSpecifications={descriptions} />
             </div>
           </Col>
         </Row>
@@ -127,6 +127,7 @@ const ProjectSpecifications = ({
             <Specifications
               specifications={specifications}
               textSpecifications={textSpecifications}
+              marginLeft
             />
           </Container>
         </Section>

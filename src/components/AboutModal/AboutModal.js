@@ -8,6 +8,9 @@ import About from "../../sections/others/About";
 
 import { device } from "../../utils";
 
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+
+
 const ModalStyled = styled(Modal)`
   &.modal {
     padding-left: 0 !important;
@@ -80,6 +83,7 @@ const CloseButton = (props) => (
 
 const AboutModal = (props) => {
   const gContext = useContext(GlobalContext);
+  
 
   return (
     <ModalStyled
@@ -96,7 +100,7 @@ const AboutModal = (props) => {
             <CloseButton onClick={gContext.toggleAbout} />
           </div>
         </Container>
-        <About hero={false} bg="primary" />
+        <About hero={false} bg="white" />
       </Modal.Body>
     </ModalStyled>
   );

@@ -19,7 +19,7 @@ import ContactModal from "../ContactModal";
 import AboutModal from "../AboutModal";
 import ProjectSpecificationModal from "../ProjectSpecificationsModal/ProjectSpecificationsModal";
 
-import { useTranslation } from "gatsby-plugin-react-i18next";
+
 
 import GlobalContext from "../../context/GlobalContext";
 
@@ -71,7 +71,10 @@ const getTheme = mode =>
   });
 
 const Layout = ({ children, pageContext }) => {
-  const { t } = useTranslation();
+  
+
+  
+
   const gContext = useContext(GlobalContext);
 
   const [visibleLoader, setVisibleLoader] = useState(true);
@@ -171,3 +174,8 @@ const Layout = ({ children, pageContext }) => {
 };
 
 export default Layout;
+
+
+
+
+

@@ -17,7 +17,7 @@ const ItemWrapper = styled.div`
   margin-bottom: 25px;
 `;
 
-const Specifications = ({ specifications, textSpecifications }) => {
+const Specifications = ({ specifications, textSpecifications, marginLeft }) => {
   return (
     <Wrapper>
       {specifications && (
@@ -27,7 +27,7 @@ const Specifications = ({ specifications, textSpecifications }) => {
               <Title color="dark" variant="card">
                 {title}
               </Title>
-              <div className="pl-lg-2">
+              <div className={marginLeft ? "pl-lg-2" : ""}>
                 <ImgStyled src={image} style={{ opacity: dim ? "0.6" : "" }} />
               </div>
             </ItemWrapper>
@@ -42,7 +42,7 @@ const Specifications = ({ specifications, textSpecifications }) => {
                 <Title color="dark" variant="card">
                   {mainTitle}
                 </Title>
-                <div className="pl-lg-2">
+                <div className={marginLeft ? "pl-lg-2" : ""}>
                   {paragraphs && (
                     <>
                       {paragraphs.map(({ content }, idx) => (
@@ -50,9 +50,7 @@ const Specifications = ({ specifications, textSpecifications }) => {
                           key={idx}
                           // color="dark"
                           className={
-                            idx !== paragraphs.length - 1
-                              ? "mb-4"
-                              : ""
+                            idx !== paragraphs.length - 1 ? "mb-4" : ""
                           }
                           css={`
                             line-height: 1.5;

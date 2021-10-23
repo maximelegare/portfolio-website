@@ -1,5 +1,23 @@
 {
   "welcome": "Bienvenue!",
+  "aboutModal":{
+    "mainTitle":"Maxime Légaré",
+    "descriptions": [
+      {
+        "mainTitle": "",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Salut! Moi c'est Maxime, un developpeur web spécialisé dans le «Front-End»."
+          },
+          {
+            "title": "",
+            "content": "J'ai un background en design, ce qui me permet d'être plus critique lors de la conception d'interfaces utilisateurs."
+          }
+        ]
+      }
+    ]
+  },
   "a1": {
     "cardTitle": "France Lavoie, styliste",
     "brand": "France Lavoie, styliste",

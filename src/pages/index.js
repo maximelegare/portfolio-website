@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useContext, useEffect} from "react";
 import { Element } from "react-scroll";
 
+import GlobalContext from "../context/GlobalContext";
 import { graphql } from 'gatsby'
+
+import { useTranslation } from "gatsby-plugin-react-i18next";
+
 
 import PageWrapper from "../components/PageWrapper";
 import Hero from "../sections/landing1/Hero";
@@ -9,6 +13,17 @@ import Works from "../sections/landing1/Works";
 import Contact from "../sections/landing1/Contact";
 
 const IndexPage = () => {
+  
+  const { t } = useTranslation()
+  const aboutTraductions = t("aboutModal", {returnObjects:true})
+
+  const gContext = useContext(GlobalContext)
+  
+  useEffect(() => {
+    gContext.changeAboutModalTraductions(aboutTraductions)
+  },[])
+
+  
   return (
     <>
       <PageWrapper>

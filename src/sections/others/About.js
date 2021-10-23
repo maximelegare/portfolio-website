@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
+
+import Specifications from "../../components/Specificatons/Specifications";
+
+import GlobalContext from "../../context/GlobalContext";
+
 
 import { Section, Title, Text, Span } from "../../components/Core";
 import imgPhoto from "../../assets/image/jpg/portfolio-about.jpg";
@@ -19,7 +24,11 @@ const LinkSocial = styled.a`
   }
 `;
 
-const About = ({ hero = true, bg = "dark", ...rest }) => {
+const About = ({ hero = true, bg = "dark",  ...rest }) => {
+
+  const gContext = useContext(GlobalContext)
+  const {mainTitle, descriptions} = gContext.aboutModalTraductions
+
   return (
     <>
       <Section hero={hero} bg={bg} {...rest}>
@@ -32,22 +41,10 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
             </Col>
             <Col lg="6">
               <div className="pl-lg-4 pt-5 pt-lg-0">
-                <Title color="light" variant="secSm">
-                  Bruce Ryan
+                <Title color="dark" variant="secSm">
+                  {mainTitle}
                 </Title>
-                <Text
-                  color="light"
-                  className="mt-3 mt-lg-5"
-                  css={`
-                    line-height: 1.5;
-                  `}
-                >
-                  UX Designer based in New York, USA. I am designing with a
-                  minimal and beautiful design in mind.
-                </Text>
-                <Text color="light" className="mt-4">
-                  I strive for a minimal and beautiful design.
-                </Text>
+                <Specifications textSpecifications={descriptions}/>
                 <div className="mt-4">
                   <Text color="light">Email me at</Text>
 
@@ -56,7 +53,7 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                       href="mailto:hello@folio.com"
                       className="font-weight-bold"
                     >
-                      <Span color="light">hello@folio.com</Span>
+                      <Span color="dark">hello@folio.com</Span>
                     </a>
                   </Text>
                 </div>
