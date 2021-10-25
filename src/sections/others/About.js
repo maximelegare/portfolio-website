@@ -29,7 +29,7 @@ const LinkSocial = styled.a`
 const About = ({ hero = true, bg = "dark",  ...rest }) => {
 
   const gContext = useContext(GlobalContext)
-  const {mainTitle, descriptions} = gContext.aboutModalTraductions
+  const mT = gContext.aboutModalTraductions
   
 
   return (
@@ -45,9 +45,9 @@ const About = ({ hero = true, bg = "dark",  ...rest }) => {
             <Col lg="6">
               <div className="pl-lg-4 pt-5 pt-lg-0">
                 <Title color="dark" variant="secSm">
-                  {mainTitle}
+                  {mT?.mainTitle}
                 </Title>
-                <Specifications textSpecifications={descriptions}/>
+                <Specifications textSpecifications={mT?.descriptions}/>
                 <div className="mt-4">
                   <Text color="dark">Email me at</Text>
 

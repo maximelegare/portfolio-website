@@ -238,7 +238,7 @@ const Header = ({ isDark }) => {
 
   const { originalPath } = useI18next();
 
-  const currentLanguageCode = localStorage.getItem("gatsby-i18next-language");
+  // const currentLanguageCode = localStorage.getItem("gatsby-i18next-language");
 
   const gContext = useContext(GlobalContext);
   const [showScrolling, setShowScrolling] = useState(false);
@@ -349,10 +349,10 @@ const Header = ({ isDark }) => {
                             <LinkI18nStyled
                               to={originalPath}
                               language={lng.code}
-                              css={{
-                                textDecorationLine:
-                                  lng.code === currentLanguageCode ? "underline" : ""
-                              }}
+                              // css={{
+                              //   textDecorationLine:
+                              //     lng.code === currentLanguageCode ? "underline" : ""
+                              // }}
                             >
                               <span
                                 className={`flag-icon flag-icon-${lng.country_code} mx-2`}

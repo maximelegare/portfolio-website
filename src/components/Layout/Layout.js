@@ -12,7 +12,7 @@ import AOS from "aos";
 
 import Header from "../Header";
 import Footer from "../Footer";
-import ThemeSwitch from "../ThemeSwitch";
+// import ThemeSwitch from "../ThemeSwitch";
 
 import ModalVideo from "../ModalVideo";
 import ContactModal from "../ContactModal";
@@ -119,7 +119,7 @@ const Layout = ({ children, pageContext }) => {
           gContext.theme.bodyDark ? getTheme(modes.dark) : getTheme(modes.light)
         }
       >
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
         <GlobalStyle />
         <Helmet>
           <title>Maxime Légaré</title>
@@ -146,7 +146,7 @@ const Layout = ({ children, pageContext }) => {
           gContext.theme.bodyDark ? getTheme(modes.dark) : getTheme(modes.light)
         }
       >
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
         <GlobalStyle />
         <Helmet>
           <title>Maxime Légaré</title>
