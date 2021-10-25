@@ -1,11 +1,62 @@
 {
   "welcome": "welcome!",
+  "headerLinks":{
+    "contact":{
+      "title":"contact."
+    },
+    "about":{
+      "title":"about me."
+    },
+    "work":{
+      "title":"my work."
+    }
+  },
+  "aboutModal":{
+    "mainTitle":"Maxime Légaré",
+    "descriptions": [
+      {
+        "mainTitle": "",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Salut! Moi c'est Maxime, un developpeur web spécialisé dans le «Front-End»."
+          },
+          {
+            "title": "",
+            "content": "Grâce à mon background en Design, je suis dôté d'un oeil très critique lors de la conception d'interfaces utilisateurs."
+          },
+          {
+            "title": "",
+            "content": "En plus d'être mordu de programmation, je suis un musicien dans l'âme et un fanatique d'horreur."
+          }
+        ]
+      }
+    ]
+  },
   "a1": {
     "brand": "Buisness Card Design",
     "cardTitle": "Buisness Card Design",
     "slug": "",
     "title": "A stylish Buisness Card for a Stylist",
-    
+    "descriptions": [
+      {
+        "mainTitle": "L'objectif",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "The goal was design a highly personalized business card which would allow anyone to recognize, at first glance, the field in which Ms France Lavoie is working in."
+          },
+          {
+            "title": "",
+            "content": "On the front, there's a clothes pattern superimposed on the company's logo. In the top, a small ruler has also added since it is a rather indispensable element in the field of fashion."
+          },
+          {
+            "title": "",
+            "content": "Le bleu pâle a été choisi comme couleur principale afin d'inspirer la confiance."
+          }
+        ]
+      }
+    ],
     "categories": ["graphism"]
   },
   "a2": {
@@ -191,7 +242,18 @@
     "brand": "T-shirt designs",
     "cardTitle": "T-shirt designs",
     "slug": "Website with payments",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "T-Shirt designs",
+    "descriptions": [
+      {
+        "mainTitle": "",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Humorous works of art meant to be printed on sweaters."
+          }
+        ]
+      }
+    ],
     "categories": ["web development"]
   },
   "a12": {

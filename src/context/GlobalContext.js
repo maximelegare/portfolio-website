@@ -24,6 +24,8 @@ const GlobalProvider = ({ children }) => {
   const [selectedProjectTraductions, setSelectedProjectTranslations] = useState(null)
   const [projectSpecificationsVisible, setProjectSpecificationsVisible] = useState(false)
   const [aboutModalTraductions, setAboutModalTraductions] = useState(null)
+  const [headerTraductions, setHeaderTraductions] = useState(null)
+
 
   // set the selected project to show in the projectSpecificationModal
   const changeSelectedProjectSpecifications = (project) => {
@@ -48,7 +50,10 @@ const GlobalProvider = ({ children }) => {
     setAboutModalTraductions(data)
   }
 
-
+  const changeHeaderLinksTraductions = (data) => {
+    console.log(data)
+    setHeaderTraductions(data)
+  }
 
 
   //////////////////////////////////////////////////////////////
@@ -110,7 +115,9 @@ const GlobalProvider = ({ children }) => {
         selectedProjectTraductions,
         changeSelectedProjectTraductions,
         changeAboutModalTraductions,
-        aboutModalTraductions
+        aboutModalTraductions,
+        changeHeaderLinksTraductions,
+        headerTraductions
       }}
     >
       {children}

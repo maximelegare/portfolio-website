@@ -16,11 +16,17 @@ const IndexPage = () => {
   
   const { t } = useTranslation()
   const aboutTraductions = t("aboutModal", {returnObjects:true})
+  const headerTraductions = t("headerLinks", {returnObjects:true})
+
+
+  console.log(headerTraductions)
 
   const gContext = useContext(GlobalContext)
   
   useEffect(() => {
     gContext.changeAboutModalTraductions(aboutTraductions)
+
+    gContext.changeHeaderLinksTraductions(headerTraductions)
   },[])
 
   

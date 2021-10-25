@@ -244,6 +244,9 @@ const Header = ({ isDark }) => {
   const [showScrolling, setShowScrolling] = useState(false);
   const [showReveal, setShowReveal] = useState(false);
 
+  const hT = gContext.headerTraductions
+
+
   useScrollPosition(({ prevPos, currPos }) => {
     if (currPos.y < 0) {
       setShowScrolling(true);
@@ -293,7 +296,7 @@ const Header = ({ isDark }) => {
                           e.preventDefault();
                         }}
                       >
-                        my work.
+                        {hT?.work.title}
                       </a>
                     </Link>
                   </li>
@@ -307,7 +310,7 @@ const Header = ({ isDark }) => {
                         gContext.toggleAbout();
                       }}
                     >
-                      about me.
+                      {hT?.about.title}
                     </a>
                   </li>
 
@@ -321,7 +324,7 @@ const Header = ({ isDark }) => {
                         gContext.toggleContact();
                       }}
                     >
-                      contact.
+                      {hT?.contact.title}
                     </a>
                   </li>
                   <li className="nav-item dropdown">

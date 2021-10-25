@@ -8,8 +8,7 @@ import GlobalContext from "../../context/GlobalContext";
 
 
 import { Section, Title, Text, Span } from "../../components/Core";
-import imgPhoto from "../../assets/image/jpg/portfolio-about.jpg";
-import imgSignLight from "../../assets/image/png/signature.png";
+import imgPhoto from "../../assets/my-images/jpg/about/profile-1.jpg";
 import ListOfLinks from "../../components/ListOfLinks/ListOfLinks";
 
 import { aboutData } from "../../data/designWorks1";

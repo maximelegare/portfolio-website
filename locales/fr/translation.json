@@ -1,5 +1,16 @@
 {
   "welcome": "Bienvenue!",
+  "headerLinks":{
+    "contact":{
+      "title":"me contacter."
+    },
+    "about":{
+      "title":"à propos."
+    },
+    "work":{
+      "title":"portfolio."
+    }
+  },
   "aboutModal":{
     "mainTitle":"Maxime Légaré",
     "descriptions": [
@@ -33,11 +44,15 @@
         "paragraphs": [
           {
             "title": "",
-            "content": "Design d'une carte d'affaire pour la compagnie France Lavoie, Styliste."
+            "content": "L'objectif était de réaliser une carte d'affaire très personnalisé, permettant de reconnaitre au premier coup d'œil le métier exercé par la cliente, Mrs France Lavoie."
           },
           {
             "title": "",
-            "content": "Le design élégant tout en restant particulièrement distinct. La présence d'une règle ainsi que d'un motif de vêtements sur le revers rappelent la profession de styliste."
+            "content": "La face de la carte est constitué d'un motif de vêtements superposé au logo  de la comppagnie. Dans le haut, une petite règle a également été ajouté puisque c'est un élément plutôt indispensable dans le domaine de la mode."
+          },
+          {
+            "title": "",
+            "content": "Le bleu pâle a été choisi comme couleur principale afin d'inspirer la confiance."
           }
         ]
       }
@@ -285,7 +300,7 @@
     "cardTitle": "Designs de Chandails",
     "time":"04 mai, 2020",
     "slug": "Website with payments",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "Design De chandails",
     "descriptions": [
       {
         "mainTitle": "",
