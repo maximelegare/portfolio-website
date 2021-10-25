@@ -67,16 +67,15 @@ const WorkCard = ({ workItem, link, ...rest }) => {
   return (
     <WorkBox className="position-relative" {...rest}>
       <div className="d-block" onClick={handleClick}>
-        <img src={workItem.thumbnail} alt="" className="w-100" />
+        <img src={workItem.thumbnail} alt="" className="w-100" style={{cursor:"pointer"}}/>
       </div>
 
       <TextBox>
         <Text variant="tag" mb={2}>
           {textTraduction.categories}
         </Text>
-        <Title variant="card">
-          {/* <Trans onClick={handleClick}>a1.brand</Trans> */}
-          <div onClick={handleClick}>{textTraduction.cardTitle}</div>
+        <Title variant="card" onClick={handleClick} css={{cursor:"pointer"}}>
+           {textTraduction.cardTitle}
         </Title>
 
         {workItem.technologies

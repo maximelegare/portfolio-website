@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -6,6 +6,7 @@ import Specifications from "../../components/Specificatons/Specifications";
 
 import GlobalContext from "../../context/GlobalContext";
 
+import ImageCard from "../../components/Card/ImageCard";
 
 import { Section, Title, Text, Span } from "../../components/Core";
 import imgPhoto from "../../assets/my-images/jpg/about/profile-1.jpg";
@@ -26,11 +27,9 @@ const LinkSocial = styled.a`
   }
 `;
 
-const About = ({ hero = true, bg = "dark",  ...rest }) => {
-
-  const gContext = useContext(GlobalContext)
-  const mT = gContext.aboutModalTraductions
-  
+const About = ({ hero = true, bg = "dark", ...rest }) => {
+  const gContext = useContext(GlobalContext);
+  const mT = gContext.aboutModalTraductions;
 
   return (
     <>
@@ -39,7 +38,11 @@ const About = ({ hero = true, bg = "dark",  ...rest }) => {
           <Row className="align-items-center">
             <Col lg="6">
               <div>
-                <img src={imgPhoto} alt="folio" className="img-fluid" />
+                <ImageCard
+                  thumbnail={imgPhoto}
+                  alt="profile picture"
+                  className="img-fluid"
+                />
               </div>
             </Col>
             <Col lg="6">
@@ -47,7 +50,7 @@ const About = ({ hero = true, bg = "dark",  ...rest }) => {
                 <Title color="dark" variant="secSm">
                   {mT?.mainTitle}
                 </Title>
-                <Specifications textSpecifications={mT?.descriptions}/>
+                <Specifications textSpecifications={mT?.descriptions} />
                 <div className="mt-4">
                   <Text color="dark">Email me at</Text>
 
@@ -63,7 +66,7 @@ const About = ({ hero = true, bg = "dark",  ...rest }) => {
                 <Text color="dark" className="mt-3 font-weight-bold">
                   Bruce Ryan
                 </Text>
-                <ListOfLinks links={aboutData.links} className="mt-3"/>
+                <ListOfLinks links={aboutData.links} className="mt-3" />
               </div>
             </Col>
           </Row>
