@@ -17,7 +17,8 @@ const IndexPage = () => {
   const { t } = useTranslation()
   const aboutTraductions = t("aboutModal", {returnObjects:true})
   const headerTraductions = t("headerLinks", {returnObjects:true})
-
+  const categoriesTraductions = t("categoriesLinks", {returnObjects:true})
+   
 
   console.log(headerTraductions)
 
@@ -25,7 +26,7 @@ const IndexPage = () => {
   
   useEffect(() => {
     gContext.changeAboutModalTraductions(aboutTraductions)
-
+    gContext.changeCategoriesLinksTraductions(categoriesTraductions)
     gContext.changeHeaderLinksTraductions(headerTraductions)
   },[])
 
@@ -38,7 +39,6 @@ const IndexPage = () => {
         <Element name="works">
           <Works />
         </Element>
-
         <Contact />
       </PageWrapper>
     </>

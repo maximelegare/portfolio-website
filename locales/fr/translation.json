@@ -1,18 +1,24 @@
 {
   "welcome": "Bienvenue!",
-  "headerLinks":{
-    "contact":{
-      "title":"me contacter."
+  "categoriesLinks": [
+    { "title": "Tous", "filter": "*" },
+    { "title": "developpement web", "filter": "developpement web" },
+    { "title": "photographie", "filter": "photographie" },
+    { "title": "graphisme", "filter": "graphisme" }
+  ],
+  "headerLinks": {
+    "contact": {
+      "title": "me contacter."
     },
-    "about":{
-      "title":"à propos."
+    "about": {
+      "title": "à propos."
     },
-    "work":{
-      "title":"portfolio."
+    "work": {
+      "title": "portfolio."
     }
   },
-  "aboutModal":{
-    "mainTitle":"Maxime Légaré",
+  "aboutModal": {
+    "mainTitle": "Maxime Légaré",
     "descriptions": [
       {
         "mainTitle": "",
@@ -62,7 +68,7 @@
   "a2": {
     "brand": "Bikanky montréal",
     "cardTitle": "Bikanky montréal",
-    "time":"",
+    "time": "",
     "slug": "creation-de-vêtements",
     "title": "",
     "descriptions": [
@@ -166,7 +172,7 @@
   "a6": {
     "brand": "Projet personnel",
     "cardTitle": "Timing-app",
-    "time":"6 avr, 2021",
+    "time": "6 avr, 2021",
     "slug": "",
     "title": "Une To-do app fancy.",
     "descriptions": [
@@ -240,7 +246,6 @@
             "title": "",
             "content": "Afin de leur rendre justice, leur photographie devait sortir de l'ordinaire. En appliquant une couleur éclatante en arrière plan, le contexte devient soudainement très enfantin. "
           }
-          
         ]
       }
     ],
@@ -271,7 +276,7 @@
   "a10": {
     "brand": "Crown-shop",
     "cardTitle": "Crown-shop",
-    "time":"04 Juin, 2021",
+    "time": "04 Juin, 2021",
     "slug": "Website with payments",
     "title": "Adaptable but Identifiable Product for Kandinsky.",
     "descriptions": [
@@ -298,7 +303,7 @@
   "a11": {
     "brand": "Projet personnel",
     "cardTitle": "Designs de Chandails",
-    "time":"04 mai, 2020",
+    "time": "04 mai, 2020",
     "slug": "Website with payments",
     "title": "Design De chandails",
     "descriptions": [

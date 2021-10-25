@@ -1,18 +1,24 @@
 {
   "welcome": "welcome!",
-  "headerLinks":{
-    "contact":{
-      "title":"contact."
+  "categoriesLinks": [
+    { "title": "all", "filter": "*" },
+    { "title": "web development", "filter": "developpement web" },
+    { "title": "photography", "filter": "photographie" },
+    { "title": "graphism", "filter": "graphisme" }
+  ],
+  "headerLinks": {
+    "contact": {
+      "title": "contact."
     },
-    "about":{
-      "title":"about me."
+    "about": {
+      "title": "about me."
     },
-    "work":{
-      "title":"my work."
+    "work": {
+      "title": "my work."
     }
   },
-  "aboutModal":{
-    "mainTitle":"Maxime Légaré",
+  "aboutModal": {
+    "mainTitle": "Maxime Légaré",
     "descriptions": [
       {
         "mainTitle": "",
@@ -218,7 +224,6 @@
             "title": "",
             "content": "Afin de leur rendre justice, leur photographie devait sortir de l'ordinaire. En appliquant une couleur éclatante en arrière plan, le contexte devient soudainement très enfantin."
           }
-          
         ]
       }
     ],
