@@ -15,6 +15,7 @@ const GlobalProvider = ({ children }) => {
   const [aboutVisible, setAboutVisible] = useState(false);
   const [contactVisible, setContactVisible] = useState(false);
   const [visibleOffCanvas, setVisibleOffCanvas] = useState(false);
+  
 
   //////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////

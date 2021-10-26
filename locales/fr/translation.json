@@ -255,19 +255,24 @@
     "brand": "Find a Coach app",
     "cardTitle": "Find a Coach app",
     "slug": "",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "«Find a Coach»",
     "descriptions": [
       {
         "mainTitle": "À propos du site",
         "paragraphs": [
           {
             "title": "",
-            "content": "Cette Application m'a fait office d'introdution à Vue.js"
+            "content": "L'objectif de cette application web est de faciliter la recherche d'un coach de programation. Tous les utilisateurs ont la possibilté de s'enregistrer en tant que coach s'ils le souhaitent. Lorsqu'un coach reçoit un message via l'application, il peut le voir lorsqu'il est connecté dans l'application."
           },
           {
             "title": "",
-            "content": "Le Front-end est réalisé à l'aide de Vue.js ainsi que Vuex pour le State. Firebase s'occupe de la gestion d'utilisateurs ainsi que le stockage de données."
+            "content": "J'ai été introduit à Vue.js au cours de la réalisation de cette application web, projet également conçu des technologies suivantes: Vuex afin de faciliter la gestion du «state», Vue Router pour les «routes» ainsi que Vue Transitions pour effectuer des animations."
+          },
+          {
+            "title": "",
+            "content": "J'ai également été initié aux services d'authentification et de Real Time DataBase offerts par Firebase. Ceux-ci facilitent la gestion d'utilisateurs ainsi que le stockage de données d'utilisateurs."
           }
+          
         ]
       }
     ],

@@ -96,17 +96,13 @@ export const designWorks1 = [
     thumbnail: imgT5,
     otherImages: [],
     link: "/portfolio-details-2",
-    links: {
-      github: "https://github.com/maximelegare/bikanky-mtl",
-      liveWebsite: "https://bikanky-montreal.web.app/"
-    },
     links: [
       {
-        link: "https://github.com/maximelegare/timing-app",
+        link: "https://github.com/maximelegare/bikanky-mtl",
         icon: githubWhite
       },
       {
-        link: "https://timing-app-7c35b.web.app/timers",
+        link: "https://bikanky-montreal.web.app/",
         icon: globeWhite2
       }
     ],

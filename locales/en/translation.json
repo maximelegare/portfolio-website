@@ -46,7 +46,7 @@
     "title": "A stylish Buisness Card for a Stylist",
     "descriptions": [
       {
-        "mainTitle": "L'objectif",
+        "mainTitle": "The Goal.",
         "paragraphs": [
           {
             "title": "",
@@ -233,7 +233,27 @@
     "brand": "Find a Coach Web-app",
     "cardTitle": "Find a Coach Web-app",
     "slug": "Website with payments",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "Find a Coach",
+    "descriptions": [
+      {
+        "mainTitle": "About the website",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "The goal of this web application is to facilitate the search for a programming coach. All users have the possibility to register as a coach if they wish. When a coach receives a message from a user, he can see it when he's connected in his account."
+          },
+          {
+            "title": "",
+            "content": "I was introduced to Vue.js during the conception of this web application, a project that also uses the following technologies: Vuex manage the state more easility,  Vue Router for the routes as well as Vue Transitions to perform animations."
+          },
+          {
+            "title": "",
+            "content": "I was also introduced to the Firebase API,  the authentication and Real Time DataBase services, to be precise. These facilitate user management and data storage because it's a fully fledged backend."
+          }
+          
+        ]
+      }
+    ],
     "categories": ["web development"]
   },
   "a10": {
