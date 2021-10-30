@@ -51,7 +51,7 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                   {mT?.mainTitle}
                 </Title>
                 <Specifications textSpecifications={mT?.descriptions} />
-                <div className="mt-4">
+                {/* <div className="mt-4">
                   <Text color="dark">Email me at</Text>
 
                   <Text variant="p">
@@ -62,11 +62,8 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                       <Span color="dark">mleg1234@protonmail.com</Span>
                     </a>
                   </Text>
-                </div>
-                <Text color="dark" className="mt-3 font-weight-bold">
-                  Bruce Ryan
-                </Text>
-                <ListOfLinks links={aboutData.links} className="mt-3" />
+                </div> */}
+                {/* <ListOfLinks links={aboutData.links} className="mt-3" /> */}
               </div>
             </Col>
           </Row>
