@@ -5,6 +5,8 @@ import { FaAngleRight, FaAngleDown } from "react-icons/fa";
 import { Link } from "gatsby";
 import GlobalContext from "../../context/GlobalContext";
 
+import { Link as LinkScroll } from "react-scroll";
+
 const NestedMenuContainer = styled.div`
   a {
     color: ${({ theme }) => theme.colors.dark} !important;
@@ -54,45 +56,46 @@ const NestedMenuContainer = styled.div`
   } */
 `;
 
-const defaultMenuItems = [
-  { name: "home", label: "Home" },
-  {
-    name: "billing",
-    label: "Billing",
-    items: [
-      { name: "statements", label: "Statements" },
-      { name: "reports", label: "Reports" },
-    ],
-  },
-  {
-    name: "settings",
-    label: "Settings",
-    items: [
-      { name: "profile", label: "Profile" },
-      { name: "insurance", label: "Insurance" },
-      {
-        name: "notifications",
-        label: "Notifications",
-        items: [
-          { name: "email", label: "Email" },
-          {
-            name: "desktop",
-            label: "Desktop",
-            items: [
-              { name: "schedule", label: "Schedule" },
-              { name: "frequency", label: "Frequency" },
-            ],
-          },
-          { name: "sms", label: "SMS" },
-        ],
-      },
-    ],
-  },
-];
+// const defaultMenuItems = [
+//   { name: "home", label: "Home" },
+//   {
+//     name: "billing",
+//     label: "Billing",
+//     items: [
+//       { name: "statements", label: "Statements" },
+//       { name: "reports", label: "Reports" },
+//     ],
+//   },
+//   {
+//     name: "settings",
+//     label: "Settings",
+//     items: [
+//       { name: "profile", label: "Profile" },
+//       { name: "insurance", label: "Insurance" },
+//       {
+//         name: "notifications",
+//         label: "Notifications",
+//         items: [
+//           { name: "email", label: "Email" },
+//           {
+//             name: "desktop",
+//             label: "Desktop",
+//             items: [
+//               { name: "schedule", label: "Schedule" },
+//               { name: "frequency", label: "Frequency" },
+//             ],
+//           },
+//           { name: "sms", label: "SMS" },
+//         ],
+//       },
+//     ],
+//   },
+// ];
 
 const MenuItem = ({
   label,
   isExternal = false,
+  title,
   name,
   items,
   depthStep = 20,
@@ -139,7 +142,7 @@ const MenuItem = ({
                 }
               }}
             >
-              {label}
+              {title}
             </a>
           ) : (
             <Link
@@ -174,22 +177,50 @@ const MenuItem = ({
   );
 };
 
-const NestedMenu = ({ menuItems = defaultMenuItems }) => {
+const NestedMenu = ({translation}) => {
   const gContext = useContext(GlobalContext);
 
   return (
     <NestedMenuContainer>
       <ListGroup variant="flush">
-        {menuItems.map((menuItem, index) => (
+        {/* {menuItems.map((menuItem, index) => (
           <MenuItem
-            key={`${menuItem.name}${index}`}
+            key={`${menuItem.title}${index}`}
             depthStep={20}
             depth={0}
             {...menuItem}
           />
-        ))}
+        ))} */}
 
         {/* Open about modal */}
+        <ListGroup.Item
+          css={`
+            padding-left: 0px !important;
+            padding-right: 0 !important;
+          `}
+        >
+          {
+          <LinkScroll
+            to="works"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={1000}
+          >
+            <a
+              href="/#"
+              onClick={e => {
+                e.preventDefault();
+                if (gContext.visibleOffCanvas) {
+                  gContext.toggleOffCanvas();
+                }
+              }}
+            >
+              {translation?.work.title}
+            </a>
+          </LinkScroll>
+          }
+        </ListGroup.Item>
         <ListGroup.Item
           css={`
             padding-left: 0px !important;
@@ -207,7 +238,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
                 }
               }}
             >
-              about me.
+              {translation?.about.title}
             </a>
           }
         </ListGroup.Item>
@@ -230,7 +261,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
                 }
               }}
             >
-              contact.
+              {translation?.contact.title}
             </a>
           }
         </ListGroup.Item>

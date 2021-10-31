@@ -45,20 +45,7 @@ const Hero = () => {
                     mb="40px"
                     style={{ display: "inline" }}
                   >
-                    DEVELOPPEUR WEB, DESIGNER &{" "}
-                  </Text>
-                  <Text
-                    variant="tag"
-                    mb={4}
-                    className="text-uppercase"
-                    color="heading"
-                    mb="40px"
-                    style={{ display: "inline-block",position: "relative", zIndex: 100 }}
-                  >
-                    <i style={{ position: "relative", zIndex: 100}}>
-                      «&nbsp;HORROR&nbsp;LOVER&nbsp;»
-                    </i>
-                    <ImgBlood src={imgBlood} alt="" />
+                    DEVELOPPEUR WEB, DESIGNER, HORROR lOVER
                   </Text>
                 </Box>
 

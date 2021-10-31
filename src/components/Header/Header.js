@@ -316,18 +316,7 @@ const Header = ({ isDark }) => {
                   </li>
 
                   {/* Open contact modal */}
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="/#"
-                      onClick={e => {
-                        e.preventDefault();
-                        gContext.toggleContact();
-                      }}
-                    >
-                      {hT?.contact.title}
-                    </a>
-                  </li>
+
                   <li className="nav-item dropdown">
                     <a
                       className="nav-link"
@@ -343,11 +332,18 @@ const Header = ({ isDark }) => {
                       className="menu-dropdown "
                       dark={isDark ? 1 : 0}
                       style={{ width: "10px" }}
-                      css={{marginLeft:`${hT?.remume.title === "resumé." ? "55px" :"150px"}`}}
+                      css={{
+                        marginLeft: `${
+                          hT?.remume.title === "resumé." ? "55px" : "150px"
+                        }`
+                      }}
                     >
                       {languages.map(lng => {
                         return (
-                          <li key={lng.name} style={{ margin: "5px 0 5px 10px" }}>
+                          <li
+                            key={lng.name}
+                            style={{ margin: "5px 0 5px 10px" }}
+                          >
                             <a href={lng.pdfLink} download>
                               Download {lng.code}
                             </a>
@@ -371,7 +367,6 @@ const Header = ({ isDark }) => {
                       className="menu-dropdown"
                       dark={isDark ? 1 : 0}
                       style={{ width: "10px" }}
-                      
                     >
                       {languages.map(lng => {
                         return (
@@ -417,7 +412,7 @@ const Header = ({ isDark }) => {
         show={gContext.visibleOffCanvas}
         onHideOffcanvas={gContext.toggleOffCanvas}
       >
-        <NestedMenu menuItems={menuItems} />
+        <NestedMenu translation={hT} />
       </Offcanvas>
     </>
   );
