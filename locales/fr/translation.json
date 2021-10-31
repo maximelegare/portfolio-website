@@ -16,8 +16,11 @@
     "work": {
       "title": "portfolio."
     },
-    "remume":{
+    "resume":{
       "title":"curriculum vitae."
+    },
+    "language":{
+      "title":"Langage"
     }
   },
   "aboutModal": {

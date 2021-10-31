@@ -4,6 +4,9 @@ import { ListGroup, Collapse } from "react-bootstrap";
 import { FaAngleRight, FaAngleDown } from "react-icons/fa";
 import { Link } from "gatsby";
 import GlobalContext from "../../context/GlobalContext";
+import { useI18next } from "gatsby-plugin-react-i18next";
+
+import { Link as LinkI18n } from "gatsby-plugin-react-i18next";
 
 import { Link as LinkScroll } from "react-scroll";
 
@@ -56,57 +59,36 @@ const NestedMenuContainer = styled.div`
   } */
 `;
 
-// const defaultMenuItems = [
-//   { name: "home", label: "Home" },
-//   {
-//     name: "billing",
-//     label: "Billing",
-//     items: [
-//       { name: "statements", label: "Statements" },
-//       { name: "reports", label: "Reports" },
-//     ],
-//   },
-//   {
-//     name: "settings",
-//     label: "Settings",
-//     items: [
-//       { name: "profile", label: "Profile" },
-//       { name: "insurance", label: "Insurance" },
-//       {
-//         name: "notifications",
-//         label: "Notifications",
-//         items: [
-//           { name: "email", label: "Email" },
-//           {
-//             name: "desktop",
-//             label: "Desktop",
-//             items: [
-//               { name: "schedule", label: "Schedule" },
-//               { name: "frequency", label: "Frequency" },
-//             ],
-//           },
-//           { name: "sms", label: "SMS" },
-//         ],
-//       },
-//     ],
-//   },
-// ];
+const defaultMenuItems = [
+  {
+    name: "billing",
+    label: "Billing",
+    items: [
+      { name: "statements", label: "Statements" },
+      { name: "reports", label: "Reports" }
+    ]
+  }
+];
 
 const MenuItem = ({
   label,
-  isExternal = false,
   title,
   name,
+  code,
+  pdfLink,
   items,
+  mainLabel,
   depthStep = 20,
   depth = 0,
+  changeLng,
+  country_code,
   ...rest
 }) => {
   const [open, setOpen] = useState(false);
   const hasSubItems = Array.isArray(items);
 
   const gContext = useContext(GlobalContext);
-
+  const { originalPath } = useI18next();
   return (
     <>
       {hasSubItems ? (
@@ -122,7 +104,7 @@ const MenuItem = ({
             open ? "active" : ""
           }`}
         >
-          <span>{label}</span>
+          <span>{mainLabel}</span>
           <span>{open ? <FaAngleDown /> : <FaAngleRight />}</span>
         </ListGroup.Item>
       ) : (
@@ -133,28 +115,17 @@ const MenuItem = ({
             padding-right: 0 !important;
           `}
         >
-          {isExternal ? (
-            <a
-              href={`${name}`}
-              onClick={() => {
-                if (gContext.visibleOffCanvas) {
-                  gContext.toggleOffCanvas();
-                }
-              }}
-            >
-              {title}
-            </a>
+          {changeLng ? (
+            <LinkI18n to={originalPath} language={code}>
+              <span
+                className={`flag-icon flag-icon-${country_code} mx-2`}
+              ></span>
+              <span style={{ width: "100%" }}>{name}</span>
+            </LinkI18n>
           ) : (
-            <Link
-              to={`/${name}`}
-              onClick={() => {
-                if (gContext.visibleOffCanvas) {
-                  gContext.toggleOffCanvas();
-                }
-              }}
-            >
-              {label}
-            </Link>
+            <a href={pdfLink} download>
+              <span style={{ width: "100%" }}>Download {code}</span>
+            </a>
           )}
         </ListGroup.Item>
       )}
@@ -162,12 +133,13 @@ const MenuItem = ({
       {hasSubItems ? (
         <Collapse in={open}>
           <ListGroup>
-            {items.map((subItem) => (
+            {items.map(subItem => (
               <MenuItem
                 key={subItem.name}
                 depth={depth + 1}
                 depthStep={depthStep}
                 {...subItem}
+                changeLng={changeLng}
               />
             ))}
           </ListGroup>
@@ -177,21 +149,35 @@ const MenuItem = ({
   );
 };
 
-const NestedMenu = ({translation}) => {
+const NestedMenu = ({
+  translation,
+  languages,
+  menuItems = defaultMenuItems
+}) => {
   const gContext = useContext(GlobalContext);
 
   return (
     <NestedMenuContainer>
       <ListGroup variant="flush">
-        {/* {menuItems.map((menuItem, index) => (
+        {menuItems.map((menuItem, index) => (
           <MenuItem
             key={`${menuItem.title}${index}`}
             depthStep={20}
             depth={0}
-            {...menuItem}
+            items={languages}
+            mainLabel={translation?.language.title}
+            changeLng={true}
           />
-        ))} */}
-
+        ))}
+        {menuItems.map((menuItem, index) => (
+          <MenuItem
+            key={`${menuItem.title}${index}`}
+            depthStep={20}
+            depth={0}
+            items={languages}
+            mainLabel={translation?.resume.title}
+          />
+        ))}
         {/* Open about modal */}
         <ListGroup.Item
           css={`
@@ -200,25 +186,25 @@ const NestedMenu = ({translation}) => {
           `}
         >
           {
-          <LinkScroll
-            to="works"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={1000}
-          >
-            <a
-              href="/#"
-              onClick={e => {
-                e.preventDefault();
-                if (gContext.visibleOffCanvas) {
-                  gContext.toggleOffCanvas();
-                }
-              }}
+            <LinkScroll
+              to="works"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={1000}
             >
-              {translation?.work.title}
-            </a>
-          </LinkScroll>
+              <a
+                href="/#"
+                onClick={e => {
+                  e.preventDefault();
+                  if (gContext.visibleOffCanvas) {
+                    gContext.toggleOffCanvas();
+                  }
+                }}
+              >
+                {translation?.work.title}
+              </a>
+            </LinkScroll>
           }
         </ListGroup.Item>
         <ListGroup.Item
@@ -230,7 +216,7 @@ const NestedMenu = ({translation}) => {
           {
             <a
               href="/#"
-              onClick={(e) => {
+              onClick={e => {
                 e.preventDefault();
                 gContext.toggleAbout();
                 if (gContext.visibleOffCanvas) {
@@ -239,29 +225,6 @@ const NestedMenu = ({translation}) => {
               }}
             >
               {translation?.about.title}
-            </a>
-          }
-        </ListGroup.Item>
-
-        {/* Open contact modal */}
-        <ListGroup.Item
-          css={`
-            padding-left: 0px !important;
-            padding-right: 0 !important;
-          `}
-        >
-          {
-            <a
-              href="/#"
-              onClick={(e) => {
-                e.preventDefault();
-                gContext.toggleContact();
-                if (gContext.visibleOffCanvas) {
-                  gContext.toggleOffCanvas();
-                }
-              }}
-            >
-              {translation?.contact.title}
             </a>
           }
         </ListGroup.Item>

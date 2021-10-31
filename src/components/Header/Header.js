@@ -326,7 +326,7 @@ const Header = ({ isDark }) => {
                       href="/"
                       onClick={e => e.preventDefault()}
                     >
-                      {hT?.remume.title}
+                      {hT?.resume.title}
                     </a>
                     <MenuDropdown
                       className="menu-dropdown "
@@ -334,7 +334,7 @@ const Header = ({ isDark }) => {
                       style={{ width: "10px" }}
                       css={{
                         marginLeft: `${
-                          hT?.remume.title === "resumé." ? "55px" : "150px"
+                          hT?.resume.title === "resumé." ? "55px" : "150px"
                         }`
                       }}
                     >
@@ -412,7 +412,7 @@ const Header = ({ isDark }) => {
         show={gContext.visibleOffCanvas}
         onHideOffcanvas={gContext.toggleOffCanvas}
       >
-        <NestedMenu translation={hT} />
+        <NestedMenu translation={hT} languages={languages}/>
       </Offcanvas>
     </>
   );

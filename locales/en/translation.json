@@ -16,8 +16,11 @@
     "work": {
       "title": "my work."
     },
-    "remume":{
-      "title":"resumé."
+    "resume":{
+      "title":"resume."
+    },
+    "language":{
+      "title":"Language"
     }
   },
   "aboutModal": {
