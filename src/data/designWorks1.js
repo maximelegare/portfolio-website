@@ -102,7 +102,7 @@ export const designWorks1 = [
         icon: githubWhite
       },
       {
-        link: "https://bikanky-montreal.web.app/",
+        link: "https://bikanky-montreal.firebaseapp.com/",
         icon: globeWhite2
       }
     ],
