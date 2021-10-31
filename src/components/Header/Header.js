@@ -334,7 +334,7 @@ const Header = ({ isDark }) => {
                       style={{ width: "10px" }}
                       css={{
                         marginLeft: `${
-                          hT?.resume.title === "resumé." ? "55px" : "150px"
+                          hT?.resume.title === "resume." ? "55px" : "150px"
                         }`
                       }}
                     >

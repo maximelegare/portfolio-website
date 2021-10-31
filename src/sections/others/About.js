@@ -44,14 +44,10 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                   className="img-fluid"
                 />
               </div>
-            </Col>
-            <Col lg="6">
-              <div className="pl-lg-4 pt-5 pt-lg-0">
-                <Title color="dark" variant="secSm">
-                  {mT?.mainTitle}
-                </Title>
-                <Specifications textSpecifications={mT?.descriptions} />
-                {/* <div className="mt-4">
+              <div
+                className="mt-4 d-flex justify-content-between"
+              >
+                <div>
                   <Text color="dark">Email me at</Text>
 
                   <Text variant="p">
@@ -62,8 +58,18 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                       <Span color="dark">mleg1234@protonmail.com</Span>
                     </a>
                   </Text>
-                </div> */}
-                {/* <ListOfLinks links={aboutData.links} className="mt-3" /> */}
+                </div>
+                <div>
+                  <ListOfLinks links={aboutData.links} className="mt-3" />
+                </div>
+              </div>
+            </Col>
+            <Col lg="6">
+              <div className="pl-lg-4 pt-5 pt-lg-0">
+                <Title color="dark" variant="secSm">
+                  {mT?.mainTitle}
+                </Title>
+                <Specifications textSpecifications={mT?.descriptions} />
               </div>
             </Col>
           </Row>
