@@ -343,7 +343,7 @@ const Header = ({ isDark }) => {
                       className="menu-dropdown "
                       dark={isDark ? 1 : 0}
                       style={{ width: "10px" }}
-                      css={{marginLeft:"148px"}}
+                      css={{marginLeft:`${hT?.remume.title === "resumé." ? "55px" :"150px"}`}}
                     >
                       {languages.map(lng => {
                         return (
