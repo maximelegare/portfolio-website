@@ -15,6 +15,9 @@
     },
     "work": {
       "title": "my work."
+    },
+    "remume":{
+      "title":"Resumé."
     }
   },
   "aboutModal": {

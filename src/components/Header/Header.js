@@ -21,7 +21,7 @@ import globe from "../../assets/my-images/svg/globe.svg";
 import IconTechnology from "../IconTechnology";
 
 const LinkI18nStyled = styled(LinkI18n)`
-margin-left: 5px;
+  margin-left: 5px;
 `;
 
 const SiteHeader = styled.header`
@@ -225,14 +225,16 @@ const Header = ({ isDark }) => {
       code: "fr",
       name: "Français",
       country_code: "fr",
-      url: "/fr"
+      url: "/fr",
+      pdfLink: "../../assets/my-images/jpg/danielle/danielle-1.jpg"
     },
     {
       code: "en",
       name: "English",
       country_code: "gb",
       url: "/",
-      default: true
+      default: true,
+      pdfLink: "../../assets/my-images/jpg/danielle/danielle-2.jpg"
     }
   ];
 
@@ -244,8 +246,7 @@ const Header = ({ isDark }) => {
   const [showScrolling, setShowScrolling] = useState(false);
   const [showReveal, setShowReveal] = useState(false);
 
-  const hT = gContext.headerTraductions
-
+  const hT = gContext.headerTraductions;
 
   useScrollPosition(({ prevPos, currPos }) => {
     if (currPos.y < 0) {
@@ -336,12 +337,41 @@ const Header = ({ isDark }) => {
                       href="/"
                       onClick={e => e.preventDefault()}
                     >
+                      {hT?.remume.title}
+                    </a>
+                    <MenuDropdown
+                      className="menu-dropdown "
+                      dark={isDark ? 1 : 0}
+                      style={{ width: "10px" }}
+                      css={{marginLeft:"148px"}}
+                    >
+                      {languages.map(lng => {
+                        return (
+                          <li key={lng.name} style={{ margin: "5px 0 5px 10px" }}>
+                            <a href={lng.pdfLink} download>
+                              Download {lng.code}
+                            </a>
+                          </li>
+                        );
+                      })}
+                    </MenuDropdown>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a
+                      className="nav-link"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                      href="/"
+                      onClick={e => e.preventDefault()}
+                    >
                       <IconTechnology icon={globe} />
                     </a>
                     <MenuDropdown
-                      className="menu-dropdown dropdown-right"
+                      className="menu-dropdown"
                       dark={isDark ? 1 : 0}
                       style={{ width: "10px" }}
+                      
                     >
                       {languages.map(lng => {
                         return (
@@ -349,10 +379,6 @@ const Header = ({ isDark }) => {
                             <LinkI18nStyled
                               to={originalPath}
                               language={lng.code}
-                              // css={{
-                              //   textDecorationLine:
-                              //     lng.code === currentLanguageCode ? "underline" : ""
-                              // }}
                             >
                               <span
                                 className={`flag-icon flag-icon-${lng.country_code} mx-2`}
