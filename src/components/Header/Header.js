@@ -226,7 +226,7 @@ const Header = ({ isDark }) => {
       name: "Français",
       country_code: "fr",
       url: "/fr",
-      pdfLink: "../../assets/my-images/jpg/danielle/danielle-1.jpg"
+      pdfLink: "../../assets/pdf/Maxime_legare_CV_2021_fr.pdf"
     },
     {
       code: "en",
@@ -234,7 +234,7 @@ const Header = ({ isDark }) => {
       country_code: "gb",
       url: "/",
       default: true,
-      pdfLink: "../../assets/my-images/jpg/danielle/danielle-2.jpg"
+      pdfLink: "../../assets/pdf/Maxime_legare_CV_2021_en.pdf"
     }
   ];
 
