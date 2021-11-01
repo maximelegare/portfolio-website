@@ -11,6 +11,9 @@ import { device } from "../../utils";
 import Logo from "../Logo";
 import { menuItems } from "./menuItems";
 
+import frCV from '../../assets/pdf/Maxime_legare_CV_2021_fr.pdf'
+import enCV from '../../assets/pdf/Maxime_legare_CV_2021_en.pdf'
+
 import { useI18next } from "gatsby-plugin-react-i18next";
 import { Link as LinkI18n } from "gatsby-plugin-react-i18next";
 
@@ -226,7 +229,7 @@ const Header = ({ isDark }) => {
       name: "Français",
       country_code: "fr",
       url: "/fr",
-      pdfLink: "../../assets/pdf/Maxime_legare_CV_2021_fr.pdf"
+      pdfLink: frCV
     },
     {
       code: "en",
@@ -234,7 +237,7 @@ const Header = ({ isDark }) => {
       country_code: "gb",
       url: "/",
       default: true,
-      pdfLink: "../../assets/pdf/Maxime_legare_CV_2021_en.pdf"
+      pdfLink: enCV
     }
   ];
 
