@@ -92,45 +92,43 @@ const ProjectSpecifications = ({
           </Row>
         </Container>
       </Section>
-      <Container>
-        <Row className="align-items-center">
-          <Col lg="6">
-            <Row className="justify-content-center text-center">
-              {/* <img
+      <Section>
+        <Container>
+          <Row className="align-items-center">
+            <Col lg="6">
+              <Row className="justify-content-center text-center">
+                {/* <img
                   src={thumbnail}
                   alt=""
                   className="img-fluid  w-auto"
                   style={{ maxHeight: "60vh" }}
                 /> */}
-              <ImageCard
-                alt=""
-                thumbnail={thumbnail}
-                className="img-fluid  w-auto"
-                css={{ maxHeight: "70vh" }}
-              />
-            </Row>
-          </Col>
+                <ImageCard
+                  alt=""
+                  thumbnail={thumbnail}
+                  className="img-fluid  w-auto"
+                  css={{ maxHeight: "70vh" }}
+                />
+              </Row>
+            </Col>
 
-          <Col lg="6">
-            <div className="pl-lg-4">
-              <Specifications marginLeft textSpecifications={descriptions} />
-            </div>
-          </Col>
-        </Row>
-      </Container>
-
-      <ListOfLinks links={links} right section/>
-
+            <Col lg="6">
+              <div className="pl-lg-4">
+                <Specifications marginLeft textSpecifications={descriptions} />
+                <ListOfLinks links={links} />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Section>
       {(specifications || textSpecifications) && (
-        <Section>
-          <Container>
-            <Specifications
-              specifications={specifications}
-              textSpecifications={textSpecifications}
-              marginLeft
-            />
-          </Container>
-        </Section>
+        <Container>
+          <Specifications
+            specifications={specifications}
+            textSpecifications={textSpecifications}
+            marginLeft
+          />
+        </Container>
       )}
       {otherImages.length !== 0 && (
         <Section>

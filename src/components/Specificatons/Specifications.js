@@ -38,7 +38,7 @@ const Specifications = ({ specifications, textSpecifications, marginLeft }) => {
         <>
           {textSpecifications.map(
             ({ mainTitle, paragraphs, bulletPoints }, idx) => (
-              <ItemWrapper key={idx}>
+              <ItemWrapper key={idx} style={{marginBottom:"50px"}}>
                 <Title color="dark" variant="card">
                   {mainTitle}
                 </Title>

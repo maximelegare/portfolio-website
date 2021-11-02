@@ -75,24 +75,74 @@
     "brand": "Bikanky montreal web-app",
     "cardTitle": "Bikanky montreal web-app",
     "slug": "",
-    "title": "Adaptable but Identifiable Product for Kandinsky.",
+    "title": "The Star of the Show.",
     "descriptions": [
       {
-        "mainTitle": "À propos du site",
+        "mainTitle": "Bikanky Montréal",
         "paragraphs": [
           {
             "title": "",
-            "content": "Bikanky Montreal is a freelance company that needed a transactional website for the sale of clothing."
+            "content": "Development of an E-commerce website for the company Bikanky montréal."
           },
           {
             "title": "",
-            "content": "Combining React and Redux for the front-end, the website has a structure conducive to expansion. The reuse of components as well as the use of Higher Order Components (HOC) are important concepts that were taken into account from the beginning of the conception."
+            "content": "Combining React and Redux for the front-end, the website has a structure conducive to expansion. The reuse of components as well as the use of Higher Order Components (HOC) are important concepts that were taken into account from the beginning of the design in order to avoid code repetition and to promote its modularity."
           },
           {
             "title": "",
             "content": "User management and data storage is done entirely with Firebase. As far as transactions are concerned, Stripe takes care of almost everything."
           }
         ]
+      }
+    ],
+    "textSpecifications": [
+      {
+        "mainTitle": "Availables Pages",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "The home page consists of a header and an image that lead directly to a page listing all the product categories available on the website (Creations tab)."
+          },
+          {
+            "title": "",
+            "content": "When the Creations tab is visited, it is possible to click on the title of a category, in which case only the products in that category will be listed. The user can also click on the item in question, which will lead to the specifications page of the selected item."
+          }
+        ],
+        "bulletPoints": []
+      },
+      {
+        "mainTitle": "Cart & Payments",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Products can be added to the cart at any time. These can be deleted from the Shopping Cart icon as well as on the checkout page. When the user checks out, he/she must add a shipping address. After that, the checkout process is done via the Stripe API."
+          },
+          {
+            "title": "",
+            "content": ""
+          }
+        ],
+        "bulletPoints": []
+      },
+      {
+        "mainTitle": "Users management",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "All users are managed via Firebase Authentication. Then they are saved in a database (Firebase Firestore). A system of admin users is also implemented to restrict access to the page for making changes to registered products (CRUD)."
+          }
+        ],
+        "bulletPoints": []
+      },
+      {
+        "mainTitle": "Responsive Design",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Bikanky Montreal is a responsive website, which means that its design can be adjusted to all screen formats, something essential nowadays. On mobile, a Burger menu is available to access the elements usually located in the header."
+          }
+        ],
+        "bulletPoints": []
       }
     ],
     "categories": ["web development"]

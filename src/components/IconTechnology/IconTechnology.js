@@ -30,7 +30,7 @@ const IconBig = styled(IconStyled)`
 
 const IconTechnology = ({ icon, link, variant }) => {
   let IconStyled = IconDefault;
-
+  
   switch (variant) {
     case "small":
       IconStyled = IconSmall;

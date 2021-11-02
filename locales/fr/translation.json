@@ -76,37 +76,71 @@
     "cardTitle": "Bikanky montréal",
     "time": "",
     "slug": "creation-de-vêtements",
-    "title": "",
+    "title": "La pièce de résistance.",
     "descriptions": [
       {
         "mainTitle": "À propos du site",
         "paragraphs": [
           {
             "title": "",
-            "content": "Bikanky montréal est une entreprise Freelance qui avait besoin d'un site web transactionel pour la vente de vêtements."
+            "content": "Codification d'un site web E-commerce pour la compagnie Bikanky montréal."
           },
           {
             "title": "",
-            "content": "Combinant React et Redux pour le front-end, le site web a une structure propice à l'expansion. La réutilisation de composantes ainsi que l'utilisation de Higher Order Components (HOC) sont des concepts importants qui ont été pris en compte dès le début de la conception"
+            "content": "Combinant React et Redux pour le front-end, le site web a une structure propice à l'expansion. La réutilisation de composantes ainsi que l'utilisation de Higher Order Components (HOC) sont des concepts importants qui ont été pris en compte dès le début de la conception afin d'éviter la répétition de code et de promouvoir sa modularité."  
           },
           {
             "title": "",
-            "content": "La gestion d'utilisateurs ainsi que le stockage des données se fait entièrement à l'aide de Firebase. En ce qui concerne les transactions, Stripe s'occupe de pratiquement tout."
+            "content": "La gestion d'utilisateurs ainsi que le stockage des données se font entièrement à l'aide de Firebase. En ce qui concerne les transactions, Stripe s'occupe pratiquement de tout."
           }
         ]
       }
     ],
     "textSpecifications": [
       {
-        "mainTitle": "Spécifications",
+        "mainTitle": "Principaux onglets",
         "paragraphs": [
           {
             "title": "",
-            "content": "Le design élégant tout en restant particulièrement distinct. La présence d'une règle ainsi que d'un motif de vêtements sur le revers rappelent la profession de styliste."
+            "content": "La page principale est constituée d'un en-tête ainsi que d'une image qui mènent directement à une page listant toutes les catégories de produits vendus sur le site web (onglet Créations)."
           },
           {
             "title": "",
-            "content": "Le design élégant tout en restant particulièrement distinct. La présence d'une règle ainsi que d'un motif de vêtements sur le revers rappelent la profession de styliste."
+            "content": "Lorsque l'onglet Créations est visité, il est possible de cliquer sur le titre d'une catégorie, auquel cas uniquement les produits de ladite catégorie seront listés. L'utilisateur peut également appuyer sur l'article en question, ce qui menera à la page de spécifications de l'article selectionné."
+          }
+        ],
+        "bulletPoints": []
+      },
+      {
+        "mainTitle": "Paiements et panier",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Des produits peuvent être ajoutés dans le panier en tout temps. Ceux-ci peuvent être supprimés à partir de l'icône Panier ainsi que sur la page de paiements (checkout). Lorsque l'utilisateur passe à la caisse, il doit ajouter une adresse d'expédition. Par la suite, le processus de paiement est effectué via l'API de Stripe."
+          },
+          {
+            "title": "",
+            "content": ""
+          }
+        ],
+        "bulletPoints": []
+      },
+      {
+        "mainTitle": "Gestion d'utilisateurs",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Tous les utilisateurs sont gérés via Firebase Authentification. Ensuite, ils sont suvegardés dans une base de donnés (Firebase Firestore). Un système d'utilisateurs admin est également implémenté afin de restreindre l'accès à la page permettant d'effectuer des modifications sur les produits enregistrés (CRUD)."
+          }
+        ],
+        "bulletPoints": []
+      },
+      {
+        "mainTitle": "« Responsive Design »",
+        "paragraphs": [
+          {
+            "title": "",
+            "content": "Bikanky Montréal est un site web adaptif, ce qui signifie que son design s'ajuster à tous les formats d'écran, chose essentielle de nos jours. Sur mobile, un «Burger menu» est disponible afin d'accéder aux éléments généralement situés en entête."
           }
         ],
         "bulletPoints": []
@@ -272,7 +306,7 @@
           },
           {
             "title": "",
-            "content": "J'ai été introduit à Vue.js au cours de la réalisation de cette application web, projet également conçu des technologies suivantes: Vuex afin de faciliter la gestion du «state», Vue Router pour les «routes» ainsi que Vue Transitions pour effectuer des animations."
+            "content": "J'ai été introduit à Vue.js au cours de la réalisation de cette application web, projet également conçu à l'aide des technologies suivantes: Vuex afin de faciliter la gestion du «state», Vue Router pour les «routes» ainsi que Vue Transitions pour effectuer des animations."
           },
           {
             "title": "",

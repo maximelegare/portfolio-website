@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { device } from "../../utils";
 
-const DivStyled = styled.div`
+
+
+
+const DefaultDivStyled = styled.div`
   padding: 50px 0;
   @media ${device.md} {
     padding: 75px 0;
@@ -11,6 +14,17 @@ const DivStyled = styled.div`
     padding: 100px 0;
   }
 `;
+
+const BottomDivSmall = styled.div`
+ padding: 0 0 50px 0;
+  @media ${device.md} {
+    padding: 0 0 75px 0;
+  }
+  @media ${device.lg} {
+    padding: 0 0 100px 0;
+  }
+`;
+
 
 const DivStyledInside = styled(DivStyled)`
   padding: 50px 25px;
@@ -22,7 +36,20 @@ const DivStyledInside = styled(DivStyled)`
   }
 `;
 
-const Section = ({ children, inside, ...rest }) => {
+
+const Section = ({ children, inside, variant, ...rest  }) => {
+  let DivStyled = BottomDivSmall;
+
+  switch (variant) {
+    case "bottomOnly":
+      DivStyled = DefaultDivStyled;
+      break;
+    default:
+      DivStyled = BottomDivSmall;
+      break;
+  }
+
+
   return inside ? (
     <DivStyledInside {...rest}> {children}</DivStyledInside>
   ) : (

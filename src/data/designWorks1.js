@@ -54,13 +54,22 @@ import comfortaa_regular from "../assets/my-images/svg/typographies/comfortaa_re
 import open_sans_regular from "../assets/my-images/svg/typographies/open-sans_regular.svg";
 
 import githubWhite from "../assets/my-images/svg/technologies/githubWhite.svg";
-import globeWhite2 from '../assets/my-images/svg/globeWhite2.svg'
-import linkedin from '../assets/my-images/svg/linkedin.svg'
-import instagram from '../assets/my-images/svg/instagram.svg'
+import globeWhite2 from "../assets/my-images/svg/globeWhite2.svg";
+import linkedin from "../assets/my-images/svg/linkedin.svg";
+import instagram from "../assets/my-images/svg/instagram.svg";
 
+// bikanky-montreal
+import bikankyHome from "../assets/my-images/jpg/bikanky-montreal/bikanky-home.jpg";
+import bikankyAdmin from "../assets/my-images/jpg/bikanky-montreal/admin_page.jpg";
+import bikankySpecification from "../assets/my-images/jpg/bikanky-montreal/bikanky-product-specification&cart.jpg";
+import bikankyCheckout from "../assets/my-images/jpg/bikanky-montreal/checkout_page.jpg";
+import bikankyValidation from "../assets/my-images/jpg/bikanky-montreal/login_validation.jpg";
+import bikankyResponsive from "../assets/my-images/jpg/bikanky-montreal/responsive design.jpg";
+import bikankyCategory from "../assets/my-images/jpg/bikanky-montreal/separate_categories.jpg";
+import bikankyDrawerMobile from "../assets/my-images/jpg/bikanky-montreal/sideDrawer.jpg";
 
 export const aboutData = {
-  links:[
+  links: [
     {
       link: "https://github.com/maximelegare",
       icon: githubWhite
@@ -70,7 +79,7 @@ export const aboutData = {
       icon: linkedin
     }
   ]
-}
+};
 
 export const designWorks1 = [
   {
@@ -93,8 +102,17 @@ export const designWorks1 = [
   {
     id: "a2",
     categories: [`developpement web`, `photographie`, `graphisme`],
-    thumbnail: imgT5,
-    otherImages: [],
+    thumbnail: bikankySpecification,
+    otherImages: [
+      { thumbnail: bikankyAdmin },
+      { thumbnail:  bikankyHome},
+      { thumbnail: bikankyCategory },
+      { thumbnail: bikankyCheckout },
+      { thumbnail: bikankyResponsive },
+      { thumbnail: bikankyDrawerMobile },
+      { thumbnail: bikankyValidation },
+
+    ],
     link: "/portfolio-details-2",
     links: [
       {
