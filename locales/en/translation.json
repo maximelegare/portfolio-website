@@ -1,5 +1,5 @@
 {
-  "welcome": "welcome!",
+  "welcome": "Intrigued?",
   "categoriesLinks": [
     { "title": "all", "filter": "*" },
     { "title": "web development", "filter": "developpement web" },
